@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.build/
+dist/
+build/
+*.log
+
+# Entornos
+.venv/
+venv/
+env/
+
+# Config / secretos
+.env
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+
+# Datos derivados / pesados
+data/*_cleaned.csv
+data/*.parquet
+data/*.db
+data/*.sqlite
+data/tmp/
+*.zip
+
+# Modelos y artefactos
+model/*.pkl
+
+# Cache varias
+.cache/
+.mypy_cache/
+.pytest_cache/
+
