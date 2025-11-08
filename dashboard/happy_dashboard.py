@@ -605,8 +605,10 @@
 # # =========================
 # if __name__ == "__main__":
 #     app.run(debug=True, host="0.0.0.0", port=8050)
-# dashboard/the_happy_dashboard.py
-import os
+
+
+
+import os 
 import numpy as np
 import pandas as pd
 import joblib
@@ -673,80 +675,90 @@ def get_mysql_connection():
         database=MYSQL_DB,
     )
 
-def load_predictions(dataset: str = "test"):
+def load_predictions(data_set: str = "test"):
     """
-    Lee la tabla predictions y aplica filtro por Data_Set:
-    dataset ∈ {"test","train","all"}.
-    Si la columna no existe, hace fallback y filtra en pandas si se puede.
+    Lee la tabla predictions y devuelve registros según el filtro:
+      data_set ∈ {'test','train','all'}
+    Si la columna Data_Set no existe (DB antigua), hace fallback sin filtro
+    y luego filtra en pandas si la columna llega a estar presente.
     """
-    dataset = (dataset or "test").lower()
+    data_set = (data_set or "test").strip().lower()
+    if data_set not in {"test","train","all"}:
+        data_set = "test"
+
+    base_cols = """
+        Country, Region, Year,
+        GDP_per_Capita, Social_Support, Healthy_Life_Expectancy,
+        Freedom, Generosity, Perceptions_of_Corruption,
+        Predicted_Score, Actual_Score, ts
+    """
+
     try:
         conn = get_mysql_connection()
 
-        if dataset in {"test", "train"}:
+        # Intento principal: incluir Data_Set si existe y filtrar en SQL (salvo 'all')
+        if data_set == "all":
             q = f"""
-            SELECT Country, Region, Year,
-                   GDP_per_Capita, Social_Support, Healthy_Life_Expectancy,
-                   Freedom, Generosity, Perceptions_of_Corruption,
-                   Predicted_Score, Actual_Score, ts, Data_Set
-            FROM predictions
-            WHERE Data_Set = '{dataset}'
-            ORDER BY ts ASC
-            """
-        else:  # "all"
-            q = """
-            SELECT Country, Region, Year,
-                   GDP_per_Capita, Social_Support, Healthy_Life_Expectancy,
-                   Freedom, Generosity, Perceptions_of_Corruption,
-                   Predicted_Score, Actual_Score, ts,
-                   COALESCE(Data_Set,'unknown') AS Data_Set
+            SELECT {base_cols}, Data_Set
             FROM predictions
             ORDER BY ts ASC
             """
-
-        try:
-            dfp = pd.read_sql(q, conn)
-        except Exception:
-            # Fallback si la columna Data_Set no existe
-            q_legacy = """
-            SELECT Country, Region, Year,
-                   GDP_per_Capita, Social_Support, Healthy_Life_Expectancy,
-                   Freedom, Generosity, Perceptions_of_Corruption,
-                   Predicted_Score, Actual_Score, ts
+            try:
+                dfp = pd.read_sql(q, conn)
+            except Exception:
+                # Fallback legacy sin Data_Set
+                q_legacy = f"""
+                SELECT {base_cols}
+                FROM predictions
+                ORDER BY ts ASC
+                """
+                dfp = pd.read_sql(q_legacy, conn)
+        else:
+            q = f"""
+            SELECT {base_cols}, Data_Set
             FROM predictions
+            WHERE Data_Set = %s
             ORDER BY ts ASC
             """
-            dfp = pd.read_sql(q_legacy, conn)
+            try:
+                dfp = pd.read_sql(q, conn, params=[data_set])
+            except Exception:
+                # Fallback legacy sin Data_Set → sin WHERE
+                q_legacy = f"""
+                SELECT {base_cols}
+                FROM predictions
+                ORDER BY ts ASC
+                """
+                dfp = pd.read_sql(q_legacy, conn)
 
         conn.close()
 
-        if dfp.empty:
-            return pd.DataFrame(columns=[
-                "Country","Region","Year",*FEATURE_ORDER,
-                "Predicted_Score","Actual_Score","ts","Data_Set"
-            ])
+        # Tipos
+        if not dfp.empty:
+            if "Year" in dfp.columns:
+                dfp["Year"] = dfp["Year"].astype(int)
+            if "ts" in dfp.columns:
+                dfp["ts"] = pd.to_datetime(dfp["ts"])
 
-        if "Year" in dfp.columns:
-            dfp["Year"] = dfp["Year"].astype(int)
-        if "ts" in dfp.columns:
-            dfp["ts"] = pd.to_datetime(dfp["ts"], errors="coerce")
+        # Si venimos del camino legacy, aún podemos filtrar en pandas si existe Data_Set
+        if data_set in {"test","train"} and "Data_Set" in dfp.columns:
+            dfp = dfp[dfp["Data_Set"].astype(str).str.lower() == data_set]
 
-        # Si vino sin filtrar y existe Data_Set, filtramos aquí
-        if dataset in {"test","train"} and "Data_Set" in dfp.columns:
-            dfp = dfp[dfp["Data_Set"].astype(str).str.lower() == dataset]
-
-        # Normaliza valores inesperados
-        if "Data_Set" in dfp.columns:
-            dfp["Data_Set"] = dfp["Data_Set"].fillna("unknown").str.lower()
+        # Asegurar columnas
+        for col in ["Data_Set"]:
+            if col not in dfp.columns:
+                dfp[col] = np.nan
 
         return dfp
 
     except Exception as e:
         print("WARN: no se pudo leer MySQL predictions:", e)
-        return pd.DataFrame(columns=[
-            "Country","Region","Year",*FEATURE_ORDER,
-            "Predicted_Score","Actual_Score","ts","Data_Set"
-        ])
+        return pd.DataFrame(
+            columns=[
+                "Country","Region","Year",
+                *FEATURE_ORDER,"Predicted_Score","Actual_Score","ts","Data_Set"
+            ]
+        )
 
 def compute_metrics(dfp: pd.DataFrame):
     if dfp.empty:
@@ -801,8 +813,7 @@ def kpi_card(title, value, color="primary", subtitle=None):
             html.H6(title, className="text-muted"),
             html.H3(value, className=f"text-{color}"),
             html.Div(subtitle or "", className="small text-muted")
-        ]),
-        className="mb-3 shadow-sm rounded-3"
+        ]), className="mb-3 shadow-sm rounded-3"
     )
 
 header = dbc.Navbar(
@@ -830,25 +841,37 @@ controls_eda = dbc.Card(
 
 controls_stream = dbc.Card(
     dbc.CardBody([
-        html.Label("Conjunto (Train/Test/All)"),
-        dcc.Dropdown(
-            id="dataset_dd",
-            options=[
-                {"label":"TEST","value":"test"},
-                {"label":"TRAIN","value":"train"},
-                {"label":"ALL","value":"all"},
-            ],
-            value="test", clearable=False
-        ),
-        html.Br(),
         html.Label("Auto-refresh streaming (s)"),
         dcc.Input(id="refresh_secs", type="number", min=0, max=30, step=1, value=5),
         html.Div("0 = desactivado", className="small text-muted mt-1"),
     ])
 )
 
+# ---- CONTROL GLOBAL: Data Set
+controls_global = dbc.Card(
+    dbc.CardBody([
+        html.Label("Data Set"),
+        dcc.Dropdown(
+            id="dataset_dd",
+            options=[
+                {"label":"Test","value":"test"},
+                {"label":"Train","value":"train"},
+                {"label":"All","value":"all"},
+            ],
+            value="test",
+            clearable=False
+        ),
+        html.Div("Aplica a Overview y Streaming", className="small text-muted mt-2"),
+    ]), className="mb-3"
+)
+
 app.layout = dbc.Container([
     header,
+
+    # Filtro global de Data Set
+    dbc.Row([
+        dbc.Col(controls_global, md=3)
+    ]),
 
     # KPIs
     dbc.Row(id="kpi_row"),
@@ -857,23 +880,20 @@ app.layout = dbc.Container([
         # ================= Overview =================
         dbc.Tab(label="Overview", tab_id="tab-overview", children=[
             dbc.Row([
-                dbc.Col(controls_stream, md=3),
-                dbc.Col(dcc.Graph(id="pred_vs_real_scatter"), md=9),
-            ]),
-            dbc.Row([
+                dbc.Col(dcc.Graph(id="pred_vs_real_scatter"), md=6),
                 dbc.Col(dcc.Graph(id="error_by_year_bar"),   md=6),
+            ]),
+            dbc.Row([
                 dbc.Col(dcc.Graph(id="resid_vs_pred"), md=6),
-            ]),
-            dbc.Row([
                 dbc.Col(dcc.Graph(id="resid_hist"),    md=6),
+            ]),
+            dbc.Row([
                 dbc.Col(dcc.Graph(id="calib_scatter"), md=6),
-            ]),
-            dbc.Row([
                 dbc.Col(dcc.Graph(id="top_err_bar"),   md=6),
-                dbc.Col(dcc.Graph(id="region_year_heat"), md=6),
             ]),
             dbc.Row([
-                dbc.Col(dcc.Graph(id="qq_plot"),         md=12),
+                dbc.Col(dcc.Graph(id="region_year_heat"), md=6),
+                dbc.Col(dcc.Graph(id="qq_plot"),         md=6),
             ]),
         ]),
 
@@ -939,7 +959,10 @@ def update_interval(secs):
     except Exception: secs = 0
     return (24*60*60*1000) if secs<=0 else secs*1000
 
-# 1) Overview (usa dataset_dd)
+def _ds_label(ds):
+    return {"test":"TEST","train":"TRAIN","all":"ALL"}.get((ds or "test").lower(), "TEST")
+
+# 1) Overview (KPIs + todas las figuras de streaming)
 @app.callback(
     Output("kpi_row","children"),
     Output("pred_vs_real_scatter","figure"),
@@ -956,22 +979,23 @@ def update_interval(secs):
 def refresh_overview(_n, dataset_val):
     dfp = load_predictions(dataset_val)
     metrics = compute_metrics(dfp)
-    ds_label = dataset_val.upper()
+    ds_tag = _ds_label(dataset_val)
 
     kpis = dbc.Row([
-        dbc.Col(kpi_card("Registros (streaming)", f"{metrics['global']['n']:,}",
-                         "primary", f"Data_Set: {ds_label}"), md=3),
+        dbc.Col(kpi_card("Registros en streaming",
+                         f"{metrics['global']['n']:,}", "primary",
+                         f"Tabla: predictions · {ds_tag}"), md=3),
         dbc.Col(kpi_card("R² (global)",  fmt3(metrics["global"]["r2"]),  "success"), md=3),
         dbc.Col(kpi_card("MAE (global)", fmt3(metrics["global"]["mae"]), "warning"), md=3),
         dbc.Col(kpi_card("RMSE (global)",fmt3(metrics["global"]["rmse"]), "danger"), md=3),
     ])
 
-    # Pred vs Real
+    # ---- Pred vs Real
     if not dfp.empty:
         fig_pvr = px.scatter(
             dfp, x="Actual_Score", y="Predicted_Score",
             color="Year", hover_data=["Country","Region","ts","Data_Set"],
-            trendline="ols", title=f"Predicted vs Actual (streaming · {ds_label})"
+            trendline="ols", title=f"Predicted vs Actual (streaming · {ds_tag})"
         )
         fig_pvr.add_trace(go.Scatter(
             x=[dfp["Actual_Score"].min(), dfp["Actual_Score"].max()],
@@ -979,36 +1003,37 @@ def refresh_overview(_n, dataset_val):
             mode="lines", name="Ideal", line=dict(dash="dash")
         ))
     else:
-        fig_pvr = go.Figure().update_layout(title=f"Predicted vs Actual — sin datos ({ds_label})")
+        fig_pvr = go.Figure().update_layout(title=f"Predicted vs Actual — sin datos ({ds_tag})")
 
-    # RMSE por año
+    # ---- RMSE por año
     if not metrics["by_year"].empty:
         fig_err_year = px.bar(metrics["by_year"], x="Year", y="RMSE", text="N",
-                              title=f"RMSE por Año (streaming · {ds_label})")
+                              title=f"RMSE por Año (streaming · {ds_tag})")
     else:
-        fig_err_year = go.Figure().update_layout(title=f"RMSE por Año — sin datos ({ds_label})")
+        fig_err_year = go.Figure().update_layout(title=f"RMSE por Año — sin datos ({ds_tag})")
 
+    # Si no hay datos, devuelve placeholders
     if dfp.empty:
-        empty = go.Figure().update_layout(title="Esperando datos…")
+        empty = go.Figure().update_layout(title="Esperando datos de streaming…")
         return (kpis, fig_pvr, fig_err_year, empty, empty, empty, empty, empty, empty)
 
-    # Residuos
+    # ---- Residuos
     dfp = dfp.copy()
     dfp["_resid"] = dfp["Actual_Score"] - dfp["Predicted_Score"]
 
     fig_resid_fitted = px.scatter(
         dfp, x="Predicted_Score", y="_resid", color="Year",
         hover_data=["Country","Region","Actual_Score","ts","Data_Set"],
-        title="Residuos vs Predicción"
+        title=f"Residuos vs Predicción ({ds_tag})"
     )
     fig_resid_fitted.add_hline(y=0, line_dash="dash")
 
     fig_resid_hist = px.histogram(
         dfp, x="_resid", nbins=40, marginal="box",
-        title="Distribución de errores (Actual − Pred)"
+        title=f"Distribución de errores (Actual − Pred) · {ds_tag}"
     )
 
-    # Calibración por deciles
+    # ---- Calibración (deciles)
     try:
         bins = pd.qcut(dfp["Predicted_Score"], q=10, duplicates="drop")
         cal = dfp.groupby(bins).agg(
@@ -1017,30 +1042,30 @@ def refresh_overview(_n, dataset_val):
             n=("Actual_Score","size")
         ).reset_index(drop=True)
         fig_calib = px.scatter(cal, x="pred", y="real", size="n",
-                               title="Calibración por deciles")
+                               title=f"Calibración por deciles ({ds_tag})")
         fig_calib.add_trace(go.Scatter(x=cal["pred"], y=cal["pred"],
                                        mode="lines", name="Ideal",
                                        line=dict(dash="dash")))
     except Exception:
-        fig_calib = go.Figure().update_layout(title="Calibración — no suficiente variación")
+        fig_calib = go.Figure().update_layout(title=f"Calibración — no suficiente variación ({ds_tag})")
 
-    # Top errores
+    # ---- Top-15 mayores errores absolutos
     topn = dfp.assign(abs_err=(dfp["_resid"]).abs()).nlargest(15, "abs_err")
     fig_top_err = px.bar(topn, x="abs_err", y="Country", color="Year",
-                         orientation="h", title="Top 15 | Error absoluto por país")
+                         orientation="h", title=f"Top 15 | Error absoluto por país (streaming · {ds_tag})")
 
-    # Heatmap Región×Año
+    # ---- Heatmap RMSE Región×Año
     err_reg = (dfp.groupby(["Region","Year"])["_resid"]
                  .apply(lambda s: np.sqrt(np.mean(s**2)))
                  .reset_index(name="RMSE"))
     pivot = err_reg.pivot(index="Region", columns="Year", values="RMSE")
     fig_err_heat = px.imshow(pivot, color_continuous_scale="RdBu_r",
-                             aspect="auto", title="RMSE por Región y Año")
+                             aspect="auto", title=f"RMSE por Región y Año ({ds_tag})")
 
-    # Q-Q
+    # ---- Q-Q plot de residuos
     res = np.sort(dfp["_resid"].values)
     q = np.sort(np.random.normal(0, res.std(ddof=1) if res.std(ddof=1)>0 else 1e-6, size=len(res)))
-    fig_qq = px.scatter(x=q, y=res, title="Q-Q plot de residuos")
+    fig_qq = px.scatter(x=q, y=res, title=f"Q-Q plot de residuos ({ds_tag})")
     fig_qq.add_trace(go.Scatter(x=[q.min(), q.max()], y=[q.min(), q.max()],
                                 mode="lines", name="45°", line=dict(dash="dash")))
 
@@ -1066,6 +1091,7 @@ def refresh_eda(year_val, region_val, country_val):
     if country_val and country_val != "All":
         df_eda = df_eda[df_eda["Country"] == country_val]
 
+    # Boxplot por región
     if not df_eda.empty:
         fig_box_region = px.box(
             df_eda, x="Region", y="Happiness_Score", points="all",
@@ -1074,6 +1100,7 @@ def refresh_eda(year_val, region_val, country_val):
     else:
         fig_box_region = go.Figure().update_layout(title="Distribución por Región — sin datos para el filtro actual")
 
+    # Bubble GDP vs Happiness (size = Social_Support)
     if not df_eda.empty:
         fig_bubble = px.scatter(
             df_eda, x="GDP_per_Capita", y="Happiness_Score",
@@ -1084,7 +1111,9 @@ def refresh_eda(year_val, region_val, country_val):
     else:
         fig_bubble = go.Figure().update_layout(title="GDP vs Happiness — sin datos para el filtro actual")
 
-    trend = (df_clean.groupby(["Year","Region"], as_index=False)["Happiness_Score"].mean())
+    # Tendencia por región (promedio por año)
+    trend = (df_clean.groupby(["Year","Region"], as_index=False)["Happiness_Score"]
+             .mean())
     if region_val and region_val != "All":
         trend = trend[trend["Region"] == region_val]
     fig_region_trend = px.line(
@@ -1092,6 +1121,7 @@ def refresh_eda(year_val, region_val, country_val):
         markers=True, title="Tendencia del Happiness (promedio) por Región"
     )
 
+    # Top-10 países (promedio 2015–2019)
     top10 = (df_clean.groupby("Country", as_index=False)["Happiness_Score"]
              .mean()
              .sort_values("Happiness_Score", ascending=False)
@@ -1105,7 +1135,7 @@ def refresh_eda(year_val, region_val, country_val):
 
     return fig_box_region, fig_bubble, fig_region_trend, fig_top10
 
-# 3) Model — diagnósticos/explicabilidad (igual)
+# 3) Model — diagnósticos/explicabilidad (sin cambios)
 @app.callback(
     Output("coef_bar","figure"),
     Output("feature_importance_note","figure"),
@@ -1114,9 +1144,10 @@ def refresh_eda(year_val, region_val, country_val):
     Output("coef_ci","figure"),
     Output("vif_bar","figure"),
     Output("res_vs_feat","figure"),
-    Input("tabs","active_tab"),
+    Input("tabs","active_tab"),  # simple trigger
 )
 def refresh_model(_tab):
+    # Coeficientes
     coefs = linreg_coefficients()
     if coefs:
         coef_ser = pd.Series(coefs).sort_values()
@@ -1136,8 +1167,10 @@ def refresh_model(_tab):
     fig_note.update_layout(title="Interpretación de coeficientes",
                            xaxis_visible=False, yaxis_visible=False)
 
+    # Split para métricas de modelo
     Xtr, Xte, ytr, yte = train_test_split(X_ALL, y_ALL, test_size=0.3, random_state=42)
 
+    # Importancia por permutación
     try:
         pi = permutation_importance(model, Xte, yte, n_repeats=20,
                                     random_state=0, scoring="neg_mean_squared_error")
@@ -1146,6 +1179,7 @@ def refresh_model(_tab):
     except Exception as e:
         fig_pi = go.Figure().update_layout(title=f"Importancia por permutación — no disponible ({e})")
 
+    # PDP para GDP_per_Capita (promedio sobre otras variables)
     def pdp_curve(model_, X, feature, grid=40):
         xs = np.linspace(X[feature].min(), X[feature].max(), grid)
         Xc = X.copy()
@@ -1161,6 +1195,7 @@ def refresh_model(_tab):
     except Exception as e:
         fig_pdp = go.Figure().update_layout(title=f"PDP — no disponible ({e})")
 
+    # IC 95% de coeficientes (bootstrap)
     try:
         B = 200
         coef_samples=[]
@@ -1180,6 +1215,7 @@ def refresh_model(_tab):
     except Exception as e:
         fig_ci = go.Figure().update_layout(title=f"IC de coeficientes — no disponible ({e})")
 
+    # VIF
     if HAS_STATSMODELS:
         try:
             Xc = sm.add_constant(X_ALL)
@@ -1195,6 +1231,7 @@ def refresh_model(_tab):
                                xref="paper", yref="paper", x=0, y=0.5, showarrow=False)
         fig_vif.update_layout(title="VIF — no disponible")
 
+    # Residuos vs una feature (Healthy_Life_Expectancy)
     try:
         pred_all = model.predict(X_ALL)
         res_all = y_ALL - pred_all
@@ -1207,7 +1244,7 @@ def refresh_model(_tab):
 
     return (fig_coef, fig_note, fig_pi, fig_pdp, fig_ci, fig_vif, fig_res_feat)
 
-# 4) Streaming — tabla en vivo (usa dataset_dd)
+# 4) Streaming — tabla en vivo
 @app.callback(
     Output("pred_table","data"),
     Input("stream_interval","n_intervals"),
@@ -1217,9 +1254,8 @@ def refresh_stream_table(_n, dataset_val):
     dfp = load_predictions(dataset_val)
     if dfp.empty:
         return []
-    cols = ["ts","Country","Year","Predicted_Score","Actual_Score","Data_Set"] if "Data_Set" in dfp.columns else \
-           ["ts","Country","Year","Predicted_Score","Actual_Score"]
-    dfp_tbl = dfp[cols].sort_values("ts", ascending=False)
+    dfp_tbl = (dfp[["ts","Country","Year","Predicted_Score","Actual_Score","Data_Set"]]
+               .sort_values("ts", ascending=False))
     return dfp_tbl.head(200).to_dict("records")
 
 # =========================
@@ -1227,3 +1263,4 @@ def refresh_stream_table(_n, dataset_val):
 # =========================
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8050)
+

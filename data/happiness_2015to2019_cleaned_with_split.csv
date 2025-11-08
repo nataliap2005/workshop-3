@@ -1,0 +1,791 @@
+Country,Region,Year,Happiness_Score,GDP_per_Capita,Social_Support,Healthy_Life_Expectancy,Freedom,Generosity,Perceptions_of_Corruption,Data_Set
+Switzerland,Western Europe,2015,7.587,1.39651,1.0,0.94143,0.66557,0.29678,0.41978,train
+Iceland,Western Europe,2015,7.561,1.30232,1.0,0.94784,0.62877,0.4363,0.14145,train
+Denmark,Western Europe,2015,7.527,1.32548,1.0,0.87464,0.64938,0.34139,0.48357,test
+Norway,Western Europe,2015,7.522,1.459,1.0,0.88521,0.66973,0.34699,0.36503,train
+Canada,North America,2015,7.427,1.32629,1.0,0.90563,0.63297,0.45811,0.32957,train
+Finland,Western Europe,2015,7.406,1.29025,1.0,0.88911,0.64169,0.23351,0.41372,train
+Netherlands,Western Europe,2015,7.378,1.32944,1.0,0.89284,0.61576,0.4761,0.31814,test
+Sweden,Western Europe,2015,7.364,1.33171,1.0,0.91087,0.6598,0.36262,0.43844,test
+New Zealand,Australia and New Zealand,2015,7.286,1.25018,1.0,0.90837,0.63938,0.47501,0.42922,train
+Australia,Australia and New Zealand,2015,7.284,1.33358,1.0,0.93156,0.65124,0.43562,0.35637,train
+Israel,Middle East and Northern Africa,2015,7.278,1.22857,1.0,0.91387,0.41319,0.33172,0.07785,test
+Costa Rica,Latin America and Caribbean,2015,7.226,0.95578,1.0,0.86027,0.63376,0.25497,0.10583,train
+Austria,Western Europe,2015,7.2,1.33723,1.0,0.89042,0.62433,0.33088,0.18676,train
+Mexico,Latin America and Caribbean,2015,7.187,1.02054,0.91451,0.81444,0.48181,0.14074,0.21312,train
+United States,North America,2015,7.119,1.39451,1.0,0.86179,0.54604,0.40105,0.1589,train
+Brazil,Latin America and Caribbean,2015,6.983,0.98124,1.0,0.69702,0.49049,0.14574,0.17521,train
+Luxembourg,Western Europe,2015,6.946,1.56391,1.0,0.91894,0.61583,0.28034,0.37798,train
+Ireland,Western Europe,2015,6.94,1.33596,1.0,0.89533,0.61777,0.45901,0.28703,train
+Belgium,Western Europe,2015,6.937,1.30782,1.0,0.89667,0.5845,0.2225,0.2254,train
+United Arab Emirates,Middle East and Northern Africa,2015,6.901,1.42727,1.0,0.80925,0.64157,0.26428,0.38583,train
+United Kingdom,Western Europe,2015,6.867,1.26637,1.0,0.90943,0.59625,0.51912,0.32067,train
+Oman,Middle East and Northern Africa,2015,6.853,1.36011,1.0,0.76276,0.63274,0.21542,0.32524,train
+Venezuela,Latin America and Caribbean,2015,6.81,1.04424,1.0,0.72052,0.42908,0.05841,0.11069,train
+Singapore,Southeastern Asia,2015,6.798,1.52186,1.0,1.0,0.54252,0.31105,0.4921,test
+Panama,Latin America and Caribbean,2015,6.786,1.06353,1.0,0.79661,0.5421,0.24434,0.0927,train
+Germany,Western Europe,2015,6.75,1.32792,1.0,0.89186,0.61477,0.28214,0.21843,train
+Chile,Latin America and Caribbean,2015,6.67,1.10715,1.0,0.85857,0.44132,0.33363,0.12869,train
+Qatar,Middle East and Northern Africa,2015,6.611,1.69042,1.0,0.79733,0.6404,0.32573,0.52208,train
+France,Western Europe,2015,6.575,1.27778,1.0,0.94579,0.55011,0.12332,0.20646,test
+Argentina,Latin America and Caribbean,2015,6.574,1.05351,1.0,0.78723,0.44974,0.11451,0.08484,test
+Czech Republic,Central and Eastern Europe,2015,6.505,1.17898,1.0,0.84483,0.46364,0.10686,0.02652,test
+Uruguay,Latin America and Caribbean,2015,6.485,1.06166,1.0,0.8116,0.60362,0.2324,0.24558,test
+Colombia,Latin America and Caribbean,2015,6.477,0.91861,1.0,0.69077,0.53466,0.18401,0.0512,train
+Thailand,Southeastern Asia,2015,6.455,0.9669,1.0,0.7385,0.55664,0.5763,0.03187,test
+Saudi Arabia,Middle East and Northern Africa,2015,6.411,1.39541,1.0,0.72025,0.31048,0.13706,0.32524,train
+Spain,Western Europe,2015,6.329,1.23011,1.0,0.95562,0.45951,0.18227,0.06398,train
+Malta,Western Europe,2015,6.302,1.2074,1.0,0.88721,0.60365,0.51752,0.13586,train
+Taiwan,Eastern Asia,2015,6.298,1.29098,1.0,0.8753,0.3974,0.25376,0.08129,train
+Kuwait,Middle East and Northern Africa,2015,6.295,1.55422,1.0,0.72492,0.55499,0.16228,0.25609,train
+Suriname,Latin America and Caribbean,2015,6.269,0.99534,0.972,0.6082,0.59657,0.16991,0.13633,test
+Trinidad and Tobago,Latin America and Caribbean,2015,6.168,1.21183,1.0,0.61483,0.55884,0.31844,0.0114,train
+El Salvador,Latin America and Caribbean,2015,6.13,0.76454,1.0,0.67737,0.4035,0.10692,0.11776,test
+Guatemala,Latin America and Caribbean,2015,6.123,0.74553,1.0,0.64425,0.57733,0.27489,0.09472,train
+Uzbekistan,Central and Eastern Europe,2015,6.003,0.63244,1.0,0.59772,0.65821,0.22837,0.30826,train
+Slovakia,Central and Eastern Europe,2015,5.995,1.16891,1.0,0.78902,0.31751,0.16893,0.03431,test
+Japan,Eastern Asia,2015,5.987,1.27074,1.0,0.99111,0.49615,0.10705,0.1806,train
+South Korea,Eastern Asia,2015,5.984,1.24461,0.95774,0.96538,0.33208,0.18557,0.07857,train
+Ecuador,Latin America and Caribbean,2015,5.975,0.86402,0.99903,0.79075,0.48574,0.11541,0.1809,train
+Bahrain,Middle East and Northern Africa,2015,5.96,1.32376,1.0,0.74716,0.45492,0.17362,0.306,train
+Italy,Western Europe,2015,5.948,1.25114,1.0,0.95446,0.26236,0.22823,0.02901,test
+Bolivia,Latin America and Caribbean,2015,5.89,0.68133,0.97841,0.5392,0.57414,0.20536,0.088,train
+Moldova,Central and Eastern Europe,2015,5.889,0.59448,1.0,0.61826,0.32818,0.20951,0.01615,train
+Paraguay,Latin America and Caribbean,2015,5.878,0.75985,1.0,0.66098,0.53899,0.3424,0.08242,train
+Kazakhstan,Central and Eastern Europe,2015,5.855,1.12254,1.0,0.64368,0.51649,0.11827,0.08454,train
+Slovenia,Central and Eastern Europe,2015,5.848,1.18498,1.0,0.87337,0.60855,0.25328,0.03787,test
+Lithuania,Central and Eastern Europe,2015,5.833,1.14723,1.0,0.73128,0.21342,0.02641,0.01031,test
+Nicaragua,Latin America and Caribbean,2015,5.828,0.59325,1.0,0.74314,0.55475,0.27815,0.19317,test
+Peru,Latin America and Caribbean,2015,5.824,0.90019,0.97459,0.73017,0.41496,0.14982,0.05989,train
+Belarus,Central and Eastern Europe,2015,5.813,1.03192,1.0,0.73608,0.37938,0.11046,0.1909,train
+Poland,Central and Eastern Europe,2015,5.791,1.12555,1.0,0.77903,0.53122,0.16759,0.04212,train
+Malaysia,Southeastern Asia,2015,5.77,1.12486,1.0,0.72394,0.53024,0.33075,0.10501,test
+Croatia,Central and Eastern Europe,2015,5.759,1.08254,0.79624,0.78805,0.25883,0.05444,0.0243,train
+Libya,Middle East and Northern Africa,2015,5.754,1.13145,1.0,0.7038,0.41668,0.18295,0.11023,train
+Russia,Central and Eastern Europe,2015,5.716,1.13764,1.0,0.66926,0.36679,0.00199,0.03005,test
+Jamaica,Latin America and Caribbean,2015,5.709,0.81038,1.0,0.68741,0.50442,0.2123,0.02299,train
+North Cyprus,Western Europe,2015,5.695,1.20806,1.0,0.92356,0.49027,0.26169,0.1428,test
+Cyprus,Western Europe,2015,5.689,1.20813,0.89318,0.92356,0.40672,0.30638,0.06146,test
+Algeria,Middle East and Northern Africa,2015,5.605,0.93929,1.0,0.61766,0.28579,0.07822,0.17383,test
+Kosovo,Central and Eastern Europe,2015,5.589,0.80148,0.81198,0.63132,0.24749,0.2831,0.04741,train
+Turkmenistan,Central and Eastern Europe,2015,5.548,0.95847,1.0,0.53886,0.4761,0.16979,0.30844,test
+Mauritius,Sub-Saharan Africa,2015,5.477,1.00761,0.98521,0.7095,0.56066,0.37744,0.07521,test
+Hong Kong,Eastern Asia,2015,5.474,1.38604,1.0,1.0,0.59608,0.39478,0.37124,train
+Estonia,Central and Eastern Europe,2015,5.429,1.15174,1.0,0.77361,0.44888,0.0868,0.15184,test
+Indonesia,Southeastern Asia,2015,5.399,0.82827,1.0,0.63793,0.46611,0.51535,0.0,test
+Vietnam,Southeastern Asia,2015,5.36,0.63216,0.91226,0.74676,0.59444,0.1686,0.10441,train
+Turkey,Middle East and Northern Africa,2015,5.332,1.06098,0.94632,0.73172,0.22815,0.12253,0.15746,train
+Kyrgyzstan,Central and Eastern Europe,2015,5.286,0.47428,1.0,0.65088,0.43477,0.3003,0.04232,test
+Nigeria,Sub-Saharan Africa,2015,5.268,0.65435,0.90432,0.16007,0.34334,0.27233,0.0403,test
+Bhutan,Southern Asia,2015,5.253,0.77042,1.0,0.57407,0.53206,0.47998,0.15445,test
+Azerbaijan,Central and Eastern Europe,2015,5.212,1.02389,0.93793,0.64045,0.3703,0.07799,0.16065,test
+Pakistan,Southern Asia,2015,5.194,0.59543,0.41411,0.51466,0.12102,0.33671,0.10464,train
+Jordan,Middle East and Northern Africa,2015,5.192,0.90198,1.0,0.69639,0.40661,0.11053,0.14293,test
+Montenegro,Central and Eastern Europe,2015,5.192,0.97438,0.90557,0.72521,0.1826,0.1614,0.14296,train
+China,Eastern Asia,2015,5.14,0.89012,0.94675,0.81658,0.51697,0.08185,0.02781,train
+Zambia,Sub-Saharan Africa,2015,5.129,0.47038,0.91612,0.29924,0.48827,0.19591,0.12468,test
+Romania,Central and Eastern Europe,2015,5.124,1.04345,0.88588,0.7689,0.35068,0.13748,0.00649,train
+Serbia,Central and Eastern Europe,2015,5.123,0.92053,1.0,0.74836,0.20107,0.19231,0.02617,test
+Portugal,Western Europe,2015,5.102,1.15991,1.0,0.87519,0.51469,0.13719,0.01078,train
+Latvia,Central and Eastern Europe,2015,5.098,1.11312,1.0,0.72437,0.29671,0.18226,0.06332,train
+Philippines,Southeastern Asia,2015,5.073,0.70532,1.0,0.58114,0.62545,0.24991,0.12279,train
+Somalia,Sub-Saharan Africa,2015,5.057,0.18847,0.95152,0.43873,0.46582,0.50318,0.39928,test
+Morocco,Middle East and Northern Africa,2015,5.013,0.73479,0.64095,0.60954,0.41691,0.07172,0.08546,train
+North Macedonia,Central and Eastern Europe,2015,5.007,0.91851,1.0,0.73545,0.33457,0.22359,0.05327,train
+Mozambique,Sub-Saharan Africa,2015,4.971,0.08308,1.0,0.09131,0.34037,0.22269,0.15603,train
+Albania,Central and Eastern Europe,2015,4.959,0.87867,0.80434,0.81325,0.35733,0.14272,0.06413,train
+Bosnia and Herzegovina,Central and Eastern Europe,2015,4.949,0.83223,0.91916,0.79081,0.09245,0.24808,0.00227,train
+Lesotho,Sub-Saharan Africa,2015,4.898,0.37545,1.0,0.07612,0.31767,0.16388,0.12504,train
+Dominican Republic,Latin America and Caribbean,2015,4.885,0.89537,1.0,0.66825,0.57672,0.21684,0.14234,test
+Laos,Southeastern Asia,2015,4.876,0.59066,0.73803,0.54909,0.59591,0.42192,0.24249,train
+Mongolia,Eastern Asia,2015,4.874,0.82819,1.0,0.60268,0.43626,0.3323,0.02666,train
+Eswatini,Sub-Saharan Africa,2015,4.867,0.71206,1.0,0.07566,0.30658,0.18259,0.0306,train
+Greece,Western Europe,2015,4.857,1.15406,0.92933,0.88213,0.07699,0.0,0.01397,test
+Lebanon,Middle East and Northern Africa,2015,4.839,1.02564,0.80001,0.83947,0.33916,0.21854,0.04582,train
+Hungary,Central and Eastern Europe,2015,4.8,1.12094,1.0,0.75905,0.32112,0.128,0.02758,train
+Honduras,Latin America and Caribbean,2015,4.788,0.59532,0.95348,0.6951,0.40148,0.23027,0.06825,train
+Tajikistan,Central and Eastern Europe,2015,4.786,0.39047,0.85563,0.57379,0.47216,0.22974,0.15072,train
+Tunisia,Middle East and Northern Africa,2015,4.739,0.88113,0.60429,0.73793,0.26268,0.06431,0.06358,train
+Palestinian Territories,Middle East and Northern Africa,2015,4.715,0.59867,0.92558,0.66015,0.24499,0.11251,0.12905,train
+Bangladesh,Southern Asia,2015,4.694,0.39753,0.43106,0.60164,0.4082,0.21222,0.12569,test
+Iran,Middle East and Northern Africa,2015,4.686,1.0088,0.54447,0.69805,0.30033,0.38086,0.05863,test
+Ukraine,Central and Eastern Europe,2015,4.681,0.79907,1.0,0.6739,0.25123,0.15275,0.02961,train
+Iraq,Middle East and Northern Africa,2015,4.677,0.98549,0.81889,0.60237,0.0,0.17922,0.13788,train
+South Africa,Sub-Saharan Africa,2015,4.642,0.92049,1.0,0.27688,0.33207,0.11973,0.08884,train
+Ghana,Sub-Saharan Africa,2015,4.633,0.54558,0.67954,0.40132,0.42342,0.23087,0.04355,train
+Zimbabwe,Sub-Saharan Africa,2015,4.61,0.271,1.0,0.33475,0.25861,0.18987,0.08079,train
+Liberia,Sub-Saharan Africa,2015,4.571,0.0712,0.78968,0.34201,0.28531,0.24362,0.06232,train
+India,Southern Asia,2015,4.565,0.64499,0.38174,0.51529,0.39786,0.26475,0.08492,train
+Sudan,Sub-Saharan Africa,2015,4.55,0.52107,1.0,0.36878,0.10081,0.19062,0.1466,train
+Haiti,Latin America and Caribbean,2015,4.518,0.26673,0.74302,0.38847,0.24425,0.46187,0.17175,test
+Congo (Kinshasa),Sub-Saharan Africa,2015,4.517,0.0,1.0,0.09806,0.22605,0.24834,0.07625,train
+Nepal,Southern Asia,2015,4.514,0.35997,0.86449,0.56874,0.38282,0.32296,0.05907,test
+Ethiopia,Sub-Saharan Africa,2015,4.512,0.19073,0.60406,0.44055,0.4345,0.24325,0.15048,train
+Sierra Leone,Sub-Saharan Africa,2015,4.507,0.33024,0.95571,0.0,0.4084,0.21488,0.08786,train
+Mauritania,Sub-Saharan Africa,2015,4.436,0.45407,0.86908,0.35874,0.24232,0.219,0.17461,train
+Kenya,Sub-Saharan Africa,2015,4.419,0.36471,0.99876,0.41435,0.42215,0.37542,0.05839,train
+Djibouti,Sub-Saharan Africa,2015,4.369,0.44025,0.59207,0.36291,0.46074,0.18093,0.28105,train
+Armenia,Central and Eastern Europe,2015,4.35,0.76821,0.77711,0.7299,0.19847,0.07855,0.039,train
+Botswana,Sub-Saharan Africa,2015,4.332,0.99355,1.0,0.04776,0.49495,0.10461,0.12474,train
+Myanmar,Southeastern Asia,2015,4.307,0.27108,0.70905,0.48246,0.44017,0.79588,0.19034,train
+Georgia,Central and Eastern Europe,2015,4.297,0.7419,0.38562,0.72926,0.40577,0.05547,0.38331,train
+Malawi,Sub-Saharan Africa,2015,4.292,0.01604,0.41134,0.22562,0.43054,0.33128,0.06977,train
+Sri Lanka,Southern Asia,2015,4.271,0.83524,1.0,0.70806,0.53726,0.40828,0.09179,test
+Cameroon,Sub-Saharan Africa,2015,4.252,0.4225,0.88767,0.23402,0.49309,0.20618,0.05786,test
+Bulgaria,Central and Eastern Europe,2015,4.218,1.01216,1.0,0.76649,0.30587,0.11921,0.00872,test
+Egypt,Middle East and Northern Africa,2015,4.194,0.8818,0.747,0.61712,0.17288,0.11291,0.06324,train
+Yemen,Middle East and Northern Africa,2015,4.077,0.54649,0.68093,0.40064,0.35571,0.09131,0.07854,test
+Angola,Sub-Saharan Africa,2015,4.033,0.75778,0.8604,0.16683,0.10384,0.12344,0.07122,test
+Mali,Sub-Saharan Africa,2015,3.995,0.26074,1.0,0.20583,0.38857,0.18798,0.12352,test
+Congo (Brazzaville),Sub-Saharan Africa,2015,3.989,0.67866,0.6629,0.31051,0.41466,0.12388,0.11686,train
+Comoros,Sub-Saharan Africa,2015,3.956,0.23906,0.79273,0.36315,0.22917,0.17441,0.199,train
+Uganda,Sub-Saharan Africa,2015,3.931,0.21102,1.0,0.33861,0.45727,0.29066,0.07267,test
+Senegal,Sub-Saharan Africa,2015,3.904,0.36498,0.97619,0.4354,0.36772,0.20843,0.10713,train
+Gabon,Sub-Saharan Africa,2015,3.896,1.06024,0.90528,0.43372,0.31914,0.06822,0.11091,train
+Niger,Sub-Saharan Africa,2015,3.845,0.0694,0.77265,0.29707,0.47692,0.19387,0.15639,train
+Cambodia,Southeastern Asia,2015,3.819,0.46038,0.62736,0.61114,0.66246,0.40359,0.07247,train
+Tanzania,Sub-Saharan Africa,2015,3.781,0.2852,1.0,0.38215,0.32878,0.34377,0.05747,test
+Madagascar,Sub-Saharan Africa,2015,3.681,0.20824,0.66801,0.46721,0.19184,0.21333,0.08124,train
+Central African Republic,Sub-Saharan Africa,2015,3.678,0.0785,0.0,0.06699,0.48879,0.23835,0.08289,train
+Chad,Sub-Saharan Africa,2015,3.667,0.34193,0.76062,0.1501,0.23501,0.18386,0.05269,test
+Guinea,Sub-Saharan Africa,2015,3.656,0.17417,0.46475,0.24009,0.37725,0.28657,0.12139,train
+Ivory Coast,Sub-Saharan Africa,2015,3.655,0.46534,0.77115,0.15185,0.46866,0.20165,0.17922,train
+Burkina Faso,Sub-Saharan Africa,2015,3.587,0.25812,0.85188,0.27125,0.39493,0.21747,0.12832,train
+Afghanistan,Southern Asia,2015,3.575,0.31982,0.30285,0.30335,0.23414,0.3651,0.09719,train
+Rwanda,Sub-Saharan Africa,2015,3.465,0.22208,0.7737,0.42864,0.59201,0.22628,0.55191,train
+Benin,Sub-Saharan Africa,2015,3.34,0.28665,0.35386,0.3191,0.4845,0.1826,0.0801,train
+Syria,Middle East and Northern Africa,2015,3.006,0.6632,0.47489,0.72193,0.15684,0.47179,0.18906,test
+Burundi,Sub-Saharan Africa,2015,2.905,0.0153,0.41587,0.22396,0.1185,0.19727,0.10062,train
+Togo,Sub-Saharan Africa,2015,2.839,0.20868,0.13995,0.28443,0.36453,0.16681,0.10731,train
+Denmark,Western Europe,2016,7.526,1.44178,1.0,0.79504,0.57941,0.36171,0.44453,test
+Switzerland,Western Europe,2016,7.509,1.52733,1.0,0.86303,0.58557,0.28083,0.41203,train
+Iceland,Western Europe,2016,7.501,1.42666,1.0,0.86733,0.56624,0.47678,0.14975,train
+Norway,Western Europe,2016,7.498,1.57744,1.0,0.79579,0.59609,0.37895,0.35776,train
+Finland,Western Europe,2016,7.413,1.40598,1.0,0.81091,0.57104,0.25492,0.41004,train
+Canada,North America,2016,7.404,1.44015,1.0,0.8276,0.5737,0.44834,0.31329,train
+Netherlands,Western Europe,2016,7.339,1.46468,1.0,0.81231,0.55211,0.47416,0.29927,test
+New Zealand,Australia and New Zealand,2016,7.334,1.36066,1.0,0.83096,0.58147,0.49401,0.41904,test
+Australia,Australia and New Zealand,2016,7.313,1.44443,1.0,0.8512,0.56837,0.47407,0.32331,train
+Sweden,Western Europe,2016,7.291,1.45181,1.0,0.83121,0.58218,0.38254,0.40867,train
+Israel,Middle East and Northern Africa,2016,7.267,1.33766,0.99537,0.84917,0.36432,0.32288,0.08728,test
+Austria,Western Europe,2016,7.119,1.45038,1.0,0.80565,0.54355,0.32865,0.21348,train
+United States,North America,2016,7.104,1.50796,1.0,0.779,0.48163,0.41077,0.14868,train
+Costa Rica,Latin America and Caribbean,2016,7.087,1.06879,1.0,0.76146,0.55225,0.22553,0.10547,train
+Puerto Rico,Latin America and Caribbean,2016,7.039,1.35943,1.0,0.77758,0.46823,0.22202,0.12275,train
+Germany,Western Europe,2016,6.994,1.44787,1.0,0.81487,0.53466,0.30452,0.28551,train
+Brazil,Latin America and Caribbean,2016,6.952,1.08754,1.0,0.61415,0.40425,0.15776,0.14166,test
+Belgium,Western Europe,2016,6.929,1.42539,1.0,0.81959,0.51354,0.2424,0.26248,train
+Ireland,Western Europe,2016,6.907,1.48341,1.0,0.81455,0.54008,0.44963,0.29754,train
+Luxembourg,Western Europe,2016,6.871,1.69752,1.0,0.84542,0.5487,0.27571,0.35329,train
+Mexico,Latin America and Caribbean,2016,6.778,1.11508,0.7146,0.71143,0.37709,0.11735,0.18355,train
+Singapore,Southeastern Asia,2016,6.739,1.64555,0.86758,0.94719,0.4877,0.32706,0.46987,train
+United Kingdom,Western Europe,2016,6.725,1.40283,1.0,0.80991,0.50036,0.50156,0.27399,train
+Chile,Latin America and Caribbean,2016,6.705,1.2167,0.90587,0.81883,0.37789,0.31595,0.11451,test
+Panama,Latin America and Caribbean,2016,6.701,1.18306,0.98912,0.70835,0.48927,0.2418,0.08423,train
+Argentina,Latin America and Caribbean,2016,6.65,1.15137,1.0,0.69711,0.42284,0.10989,0.07296,train
+Czech Republic,Central and Eastern Europe,2016,6.596,1.30915,1.0,0.76376,0.41418,0.09929,0.03986,train
+United Arab Emirates,Middle East and Northern Africa,2016,6.573,1.57352,0.87114,0.72993,0.56215,0.26591,0.35561,train
+Uruguay,Latin America and Caribbean,2016,6.545,1.18157,1.0,0.72183,0.54388,0.18056,0.21394,train
+Malta,Western Europe,2016,6.488,1.30782,1.0,0.80315,0.54994,0.56237,0.17554,train
+Colombia,Latin America and Caribbean,2016,6.481,1.03032,1.0,0.59659,0.44735,0.15626,0.05399,train
+France,Western Europe,2016,6.478,1.39488,1.0,0.83795,0.46562,0.1216,0.17808,train
+Thailand,Southeastern Asia,2016,6.474,1.0893,1.0,0.64915,0.49553,0.58696,0.02833,train
+Saudi Arabia,Middle East and Northern Africa,2016,6.379,1.48953,0.84829,0.59267,0.37904,0.15457,0.30008,train
+Taiwan,Eastern Asia,2016,6.379,1.39729,0.92624,0.79565,0.32377,0.25495,0.0663,test
+Qatar,Middle East and Northern Africa,2016,6.375,1.82427,0.87964,0.71723,0.56679,0.32388,0.48049,test
+Spain,Western Europe,2016,6.361,1.34253,1.0,0.87896,0.37545,0.17665,0.06137,train
+Algeria,Middle East and Northern Africa,2016,6.355,1.05266,0.83309,0.61804,0.21006,0.07044,0.16157,train
+Guatemala,Latin America and Caribbean,2016,6.324,0.83454,0.87119,0.54039,0.50379,0.28808,0.08701,test
+Suriname,Latin America and Caribbean,2016,6.269,1.09686,0.77866,0.50933,0.52234,0.16665,0.12692,train
+Kuwait,Middle East and Northern Africa,2016,6.239,1.61714,0.87758,0.63569,0.43166,0.15965,0.23669,train
+Bahrain,Middle East and Northern Africa,2016,6.218,1.44024,0.94397,0.65696,0.47375,0.17147,0.25772,test
+Trinidad and Tobago,Latin America and Caribbean,2016,6.168,1.32572,0.98569,0.52608,0.48453,0.31935,0.01241,train
+Venezuela,Latin America and Caribbean,2016,6.084,1.13367,1.0,0.61904,0.19847,0.0425,0.08304,train
+Slovakia,Central and Eastern Europe,2016,6.078,1.27973,1.0,0.70367,0.23391,0.13837,0.02947,train
+El Salvador,Latin America and Caribbean,2016,6.068,0.8737,0.80975,0.596,0.37269,0.08877,0.10613,train
+Malaysia,Southeastern Asia,2016,6.005,1.25142,0.88025,0.62366,0.39031,0.41474,0.09081,test
+Nicaragua,Latin America and Caribbean,2016,5.992,0.69384,0.89521,0.65213,0.46582,0.29773,0.16292,train
+Uzbekistan,Central and Eastern Europe,2016,5.987,0.73591,1.0,0.50163,0.60848,0.34326,0.28333,train
+Italy,Western Europe,2016,5.977,1.35495,1.0,0.85102,0.18827,0.16684,0.02556,train
+Ecuador,Latin America and Caribbean,2016,5.976,0.97306,0.85974,0.68613,0.4027,0.10074,0.18037,test
+Belize,Latin America and Caribbean,2016,5.956,0.87616,0.68655,0.45569,0.51231,0.23684,0.10771,test
+Japan,Eastern Asia,2016,5.921,1.38007,1.0,0.91491,0.46761,0.10224,0.18985,test
+Kazakhstan,Central and Eastern Europe,2016,5.919,1.22943,0.95544,0.57386,0.4052,0.15011,0.11132,test
+Moldova,Central and Eastern Europe,2016,5.897,0.69177,0.83132,0.52309,0.25202,0.19997,0.01903,test
+Russia,Central and Eastern Europe,2016,5.856,1.23228,1.0,0.58991,0.32682,0.02736,0.03586,test
+Poland,Central and Eastern Europe,2016,5.835,1.24585,1.0,0.69058,0.4519,0.14443,0.055,train
+South Korea,Eastern Asia,2016,5.835,1.35948,0.72194,0.88645,0.25168,0.18824,0.07716,test
+Bolivia,Latin America and Caribbean,2016,5.822,0.79422,0.83779,0.4697,0.50961,0.21698,0.07746,train
+Lithuania,Central and Eastern Europe,2016,5.813,1.2692,1.0,0.64674,0.18929,0.02025,0.0182,train
+Belarus,Central and Eastern Europe,2016,5.802,1.13062,1.0,0.63104,0.29091,0.13942,0.17457,test
+North Cyprus,Western Europe,2016,5.771,1.31141,0.81826,0.84142,0.43596,0.26322,0.16578,train
+Slovenia,Central and Eastern Europe,2016,5.768,1.29947,1.0,0.79151,0.53164,0.25738,0.03635,test
+Peru,Latin America and Caribbean,2016,5.743,0.99602,0.81255,0.62994,0.37502,0.14527,0.05292,train
+Turkmenistan,Central and Eastern Europe,2016,5.658,1.08017,1.0,0.44006,0.37408,0.22567,0.28467,train
+Mauritius,Sub-Saharan Africa,2016,5.648,1.14372,0.75695,0.66189,0.46145,0.36951,0.05203,train
+Libya,Middle East and Northern Africa,2016,5.615,1.06688,0.95076,0.52304,0.40672,0.17087,0.10339,train
+Latvia,Central and Eastern Europe,2016,5.56,1.21788,0.95025,0.63952,0.27996,0.17445,0.0889,train
+Cyprus,Western Europe,2016,5.546,1.31857,0.70697,0.8488,0.29507,0.27906,0.05228,train
+Paraguay,Latin America and Caribbean,2016,5.538,0.89373,1.0,0.58295,0.46235,0.25296,0.07396,test
+Romania,Central and Eastern Europe,2016,5.528,1.1697,0.72803,0.67602,0.36712,0.12889,0.00679,train
+Estonia,Central and Eastern Europe,2016,5.517,1.27964,1.0,0.68098,0.41511,0.08423,0.18519,train
+Jamaica,Latin America and Caribbean,2016,5.51,0.89333,0.96372,0.59469,0.43597,0.22245,0.04294,train
+Croatia,Central and Eastern Europe,2016,5.488,1.18649,0.60809,0.70524,0.23907,0.18434,0.04002,test
+Hong Kong,Eastern Asia,2016,5.458,1.5107,0.87021,0.95277,0.48079,0.40097,0.31647,train
+Somalia,Sub-Saharan Africa,2016,5.44,0.0,0.33613,0.11466,0.56778,0.27225,0.3118,train
+Somalia,Sub-Saharan Africa,2016,5.44,0.0,0.33613,0.11466,0.56778,0.27225,0.3118,train
+Kosovo,Central and Eastern Europe,2016,5.401,0.90145,0.66062,0.54,0.14396,0.27992,0.06547,test
+Turkey,Middle East and Northern Africa,2016,5.389,1.16492,0.87717,0.64718,0.23889,0.04707,0.12348,test
+Indonesia,Southeastern Asia,2016,5.314,0.95104,0.87625,0.49374,0.39237,0.56521,0.00322,train
+Jordan,Middle East and Northern Africa,2016,5.303,0.99673,0.86216,0.60712,0.36023,0.14262,0.13297,train
+Azerbaijan,Central and Eastern Europe,2016,5.291,1.12373,0.76042,0.54504,0.35327,0.0564,0.17914,train
+Philippines,Southeastern Asia,2016,5.279,0.81217,0.87877,0.47036,0.54854,0.21674,0.11757,test
+China,Eastern Asia,2016,5.245,1.0278,0.79381,0.73561,0.44012,0.04959,0.02745,train
+Bhutan,Southern Asia,2016,5.196,0.8527,0.90836,0.49759,0.46074,0.48546,0.1616,train
+Kyrgyzstan,Central and Eastern Europe,2016,5.185,0.56044,0.95434,0.55449,0.40212,0.38432,0.04762,train
+Serbia,Central and Eastern Europe,2016,5.177,1.03437,0.81329,0.6458,0.15718,0.20737,0.04339,train
+Bosnia and Herzegovina,Central and Eastern Europe,2016,5.163,0.93383,0.64367,0.70766,0.09511,0.29889,0.0,test
+Montenegro,Central and Eastern Europe,2016,5.161,1.07838,0.74173,0.63533,0.15111,0.17191,0.12721,train
+Dominican Republic,Latin America and Caribbean,2016,5.155,1.02787,0.99496,0.57669,0.52259,0.21286,0.12372,train
+Morocco,Middle East and Northern Africa,2016,5.151,0.84058,0.38595,0.59471,0.25646,0.04053,0.08404,test
+Hungary,Central and Eastern Europe,2016,5.145,1.24142,0.93164,0.67608,0.1977,0.099,0.04472,train
+Pakistan,Southern Asia,2016,5.132,0.68816,0.26135,0.40306,0.14622,0.31185,0.1388,train
+Lebanon,Middle East and Northern Africa,2016,5.129,1.12268,0.64184,0.76171,0.26228,0.23693,0.03061,test
+Portugal,Western Europe,2016,5.123,1.27607,0.94367,0.79363,0.44727,0.11691,0.01521,train
+North Macedonia,Central and Eastern Europe,2016,5.121,1.0193,0.78236,0.64738,0.27668,0.23507,0.07047,train
+Vietnam,Southeastern Asia,2016,5.061,0.74037,0.79117,0.66157,0.55954,0.25075,0.11556,train
+Somalia,Sub-Saharan Africa,2016,5.057,0.25558,0.75862,0.33108,0.3913,0.51479,0.36794,train
+Somalia,Sub-Saharan Africa,2016,5.057,0.25558,0.75862,0.33108,0.3913,0.51479,0.36794,train
+Tunisia,Middle East and Northern Africa,2016,5.045,0.97724,0.43165,0.59577,0.23553,0.03936,0.0817,train
+Greece,Western Europe,2016,5.033,1.24886,0.75473,0.80029,0.05822,0.0,0.04127,train
+Tajikistan,Central and Eastern Europe,2016,4.996,0.48835,0.75602,0.53119,0.43408,0.25998,0.13509,train
+Mongolia,Eastern Asia,2016,4.907,0.98853,1.0,0.55469,0.35972,0.34539,0.03285,train
+Laos,Southeastern Asia,2016,4.876,0.68042,0.5497,0.38291,0.52168,0.43079,0.22423,test
+Nigeria,Sub-Saharan Africa,2016,4.875,0.75216,0.64498,0.05108,0.27854,0.23219,0.0305,test
+Honduras,Latin America and Caribbean,2016,4.871,0.69429,0.75596,0.58383,0.26755,0.2044,0.06906,train
+Iran,Middle East and Northern Africa,2016,4.813,1.11758,0.38857,0.64232,0.22544,0.38538,0.0557,train
+Zambia,Sub-Saharan Africa,2016,4.795,0.61202,0.6376,0.23573,0.42662,0.17866,0.11479,train
+Nepal,Southern Asia,2016,4.793,0.44626,0.69699,0.50073,0.37012,0.3816,0.07008,test
+Palestinian Territories,Middle East and Northern Africa,2016,4.754,0.67024,0.71629,0.56844,0.17744,0.11154,0.10613,test
+Albania,Central and Eastern Europe,2016,4.655,0.9553,0.50163,0.73007,0.31866,0.1684,0.05301,test
+Bangladesh,Southern Asia,2016,4.643,0.54177,0.24749,0.52989,0.39778,0.19132,0.12583,train
+Sierra Leone,Sub-Saharan Africa,2016,4.635,0.36485,0.628,0.0,0.30685,0.23897,0.08196,train
+Iraq,Middle East and Northern Africa,2016,4.575,1.07474,0.59205,0.51076,0.24856,0.19589,0.13636,train
+Namibia,Sub-Saharan Africa,2016,4.574,0.93287,0.70362,0.34745,0.48614,0.07795,0.10398,train
+Cameroon,Sub-Saharan Africa,2016,4.513,0.52497,0.62542,0.12698,0.42736,0.2268,0.06126,train
+Ethiopia,Sub-Saharan Africa,2016,4.508,0.29283,0.37932,0.34578,0.36703,0.29522,0.1717,train
+South Africa,Sub-Saharan Africa,2016,4.459,1.02416,0.96053,0.18611,0.42483,0.13656,0.08415,train
+Sri Lanka,Southern Asia,2016,4.415,0.97318,0.84783,0.62007,0.50817,0.46978,0.07964,train
+India,Southern Asia,2016,4.404,0.74036,0.29247,0.45091,0.40285,0.25028,0.08722,test
+Myanmar,Southeastern Asia,2016,4.395,0.34112,0.69981,0.3988,0.42692,0.8,0.20243,train
+Egypt,Middle East and Northern Africa,2016,4.362,0.95395,0.49813,0.52116,0.18847,0.12706,0.10393,train
+Armenia,Central and Eastern Europe,2016,4.36,0.86086,0.62477,0.64083,0.14037,0.07793,0.03616,train
+Kenya,Sub-Saharan Africa,2016,4.356,0.52267,0.7624,0.30147,0.40576,0.41328,0.06686,train
+Ukraine,Central and Eastern Europe,2016,4.324,0.87287,1.0,0.58628,0.12859,0.20363,0.01829,train
+Ghana,Sub-Saharan Africa,2016,4.276,0.63107,0.49353,0.29681,0.40973,0.21203,0.0326,test
+Congo (Kinshasa),Sub-Saharan Africa,2016,4.272,0.05661,0.80676,0.188,0.15602,0.25458,0.06075,train
+Georgia,Central and Eastern Europe,2016,4.252,0.83792,0.19249,0.64035,0.32461,0.06786,0.3188,train
+Congo (Brazzaville),Sub-Saharan Africa,2016,4.236,0.77109,0.47799,0.28212,0.37938,0.12077,0.09753,train
+Senegal,Sub-Saharan Africa,2016,4.219,0.44314,0.77416,0.40457,0.31056,0.19103,0.11681,train
+Bulgaria,Central and Eastern Europe,2016,4.217,1.11306,0.92542,0.67806,0.21219,0.12793,0.00615,test
+Mauritania,Sub-Saharan Africa,2016,4.201,0.61391,0.84142,0.28639,0.1268,0.22686,0.17955,train
+Zimbabwe,Sub-Saharan Africa,2016,4.193,0.35041,0.71478,0.1595,0.25429,0.18503,0.08582,train
+Malawi,Sub-Saharan Africa,2016,4.156,0.08709,0.147,0.29364,0.4143,0.30968,0.07564,train
+Sudan,Sub-Saharan Africa,2016,4.139,0.63069,0.81928,0.29759,0.0,0.18077,0.10039,test
+Gabon,Sub-Saharan Africa,2016,4.121,1.15851,0.72368,0.3494,0.28098,0.06244,0.09314,test
+Mali,Sub-Saharan Africa,2016,4.073,0.31292,0.86333,0.16347,0.27544,0.21064,0.13647,test
+Haiti,Latin America and Caribbean,2016,4.028,0.34097,0.29561,0.27494,0.12072,0.47958,0.14476,train
+Botswana,Sub-Saharan Africa,2016,3.974,1.09426,0.89186,0.34752,0.44089,0.12425,0.10769,test
+Comoros,Sub-Saharan Africa,2016,3.956,0.27509,0.60323,0.29981,0.15412,0.1827,0.18437,train
+Ivory Coast,Sub-Saharan Africa,2016,3.916,0.55507,0.57576,0.04476,0.40663,0.20338,0.1553,test
+Cambodia,Southeastern Asia,2016,3.907,0.55604,0.5375,0.42494,0.58852,0.40339,0.08092,train
+Angola,Sub-Saharan Africa,2016,3.866,0.84731,0.66366,0.04991,0.00589,0.12071,0.08434,train
+Niger,Sub-Saharan Africa,2016,3.856,0.1327,0.6053,0.26162,0.38041,0.2097,0.17176,test
+South Sudan,Sub-Saharan Africa,2016,3.832,0.39394,0.18519,0.15781,0.19662,0.25899,0.13015,test
+Chad,Sub-Saharan Africa,2016,3.763,0.42214,0.63178,0.03824,0.12807,0.18667,0.04952,train
+Burkina Faso,Sub-Saharan Africa,2016,3.739,0.31995,0.63054,0.21297,0.3337,0.24353,0.12533,test
+Uganda,Sub-Saharan Africa,2016,3.739,0.34719,0.90981,0.19625,0.43653,0.27102,0.06442,train
+Yemen,Middle East and Northern Africa,2016,3.724,0.57939,0.47493,0.31048,0.2287,0.09821,0.05892,train
+Madagascar,Sub-Saharan Africa,2016,3.695,0.27954,0.46115,0.37109,0.13684,0.2204,0.07506,train
+Tanzania,Sub-Saharan Africa,2016,3.666,0.47155,0.77623,0.357,0.3176,0.31472,0.05099,train
+Liberia,Sub-Saharan Africa,2016,3.622,0.10706,0.50353,0.23165,0.25748,0.24063,0.04852,train
+Guinea,Sub-Saharan Africa,2016,3.607,0.22415,0.3109,0.18829,0.30953,0.29914,0.1192,train
+Rwanda,Sub-Saharan Africa,2016,3.515,0.32846,0.61586,0.31865,0.5432,0.23552,0.50521,test
+Benin,Sub-Saharan Africa,2016,3.484,0.39499,0.10419,0.21028,0.39747,0.2018,0.06681,train
+Afghanistan,Southern Asia,2016,3.36,0.38227,0.11037,0.17344,0.1643,0.31268,0.07112,test
+Togo,Sub-Saharan Africa,2016,3.303,0.28123,0.0,0.24811,0.34678,0.17517,0.11587,train
+Syria,Middle East and Northern Africa,2016,3.069,0.74719,0.14866,0.62994,0.06912,0.48397,0.17233,train
+Burundi,Sub-Saharan Africa,2016,2.905,0.06831,0.23442,0.15747,0.0432,0.2029,0.09419,train
+Norway,Western Europe,2017,7.537,1.61646,1.0,0.79667,0.63542,0.36201,0.31596,train
+Denmark,Western Europe,2017,7.522,1.48238,1.0,0.79257,0.62601,0.35528,0.40077,train
+Iceland,Western Europe,2017,7.504,1.48063,1.0,0.83355,0.62716,0.47554,0.15353,train
+Switzerland,Western Europe,2017,7.494,1.56498,1.0,0.85813,0.62007,0.29055,0.36701,train
+Finland,Western Europe,2017,7.469,1.44357,1.0,0.80916,0.61795,0.24548,0.38261,test
+Netherlands,Western Europe,2017,7.377,1.50394,1.0,0.8107,0.58538,0.47049,0.28266,train
+Canada,North America,2017,7.316,1.4792,1.0,0.83456,0.6111,0.43554,0.28737,train
+New Zealand,Australia and New Zealand,2017,7.314,1.40571,1.0,0.81676,0.61406,0.50001,0.38282,train
+Sweden,Western Europe,2017,7.284,1.49439,1.0,0.83088,0.61292,0.3854,0.3844,train
+Australia,Australia and New Zealand,2017,7.284,1.48441,1.0,0.84389,0.60161,0.4777,0.30118,test
+Israel,Middle East and Northern Africa,2017,7.213,1.37538,1.0,0.8384,0.40599,0.33008,0.08524,train
+Costa Rica,Latin America and Caribbean,2017,7.079,1.10971,1.0,0.75951,0.58013,0.21461,0.10011,test
+Austria,Western Europe,2017,7.006,1.4871,1.0,0.81533,0.56777,0.31647,0.22106,train
+United States,North America,2017,6.993,1.54626,1.0,0.77429,0.50574,0.39258,0.13564,train
+Ireland,Western Europe,2017,6.977,1.53571,1.0,0.80978,0.57311,0.42786,0.29839,test
+Germany,Western Europe,2017,6.951,1.48792,1.0,0.79895,0.56251,0.33627,0.27673,train
+Belgium,Western Europe,2017,6.891,1.46378,1.0,0.81809,0.53977,0.2315,0.25134,test
+Luxembourg,Western Europe,2017,6.863,1.74194,1.0,0.84509,0.59663,0.28318,0.31883,test
+United Kingdom,Western Europe,2017,6.714,1.44163,1.0,0.80534,0.50819,0.49277,0.26543,test
+Chile,Latin America and Caribbean,2017,6.652,1.25278,1.0,0.81948,0.3769,0.32666,0.08229,test
+United Arab Emirates,Middle East and Northern Africa,2017,6.648,1.62634,1.0,0.7268,0.60835,0.36094,0.32449,train
+Brazil,Latin America and Caribbean,2017,6.635,1.10735,1.0,0.61655,0.43745,0.16235,0.11109,test
+Czech Republic,Central and Eastern Europe,2017,6.609,1.35268,1.0,0.75444,0.49095,0.08811,0.03687,train
+Argentina,Latin America and Caribbean,2017,6.599,1.1853,1.0,0.69514,0.49452,0.10946,0.05974,test
+Mexico,Latin America and Caribbean,2017,6.578,1.15318,1.0,0.70998,0.41273,0.12099,0.13277,train
+Singapore,Southeastern Asia,2017,6.572,1.69228,1.0,0.94949,0.54984,0.34597,0.46431,train
+Malta,Western Europe,2017,6.527,1.34328,1.0,0.82194,0.58877,0.57473,0.15307,train
+Uruguay,Latin America and Caribbean,2017,6.454,1.21756,1.0,0.71922,0.57939,0.1751,0.17806,train
+Guatemala,Latin America and Caribbean,2017,6.454,0.872,1.0,0.54024,0.53131,0.28349,0.07722,train
+Panama,Latin America and Caribbean,2017,6.452,1.23375,1.0,0.70616,0.55003,0.21056,0.07098,test
+France,Western Europe,2017,6.442,1.43092,1.0,0.84447,0.47022,0.12976,0.1725,train
+Thailand,Southeastern Asia,2017,6.424,1.12787,1.0,0.64724,0.5802,0.57212,0.03161,train
+Taiwan,Eastern Asia,2017,6.422,1.43363,1.0,0.79398,0.36147,0.25836,0.06383,train
+Spain,Western Europe,2017,6.403,1.3844,1.0,0.88896,0.40878,0.19013,0.07091,train
+Qatar,Middle East and Northern Africa,2017,6.375,1.87077,1.0,0.7101,0.60413,0.33047,0.4393,train
+Colombia,Latin America and Caribbean,2017,6.357,1.07062,1.0,0.59503,0.47749,0.14901,0.04667,test
+Saudi Arabia,Middle East and Northern Africa,2017,6.344,1.53062,1.0,0.59015,0.44975,0.14762,0.27343,test
+Trinidad and Tobago,Latin America and Caribbean,2017,6.168,1.36136,1.0,0.51998,0.51863,0.3253,0.00896,test
+Kuwait,Middle East and Northern Africa,2017,6.105,1.63295,1.0,0.63211,0.49634,0.22829,0.21516,train
+Slovakia,Central and Eastern Europe,2017,6.098,1.32539,1.0,0.71273,0.29582,0.13654,0.02421,train
+Bahrain,Middle East and Northern Africa,2017,6.087,1.48841,1.0,0.65313,0.53675,0.17267,0.25704,train
+Malaysia,Southeastern Asia,2017,6.084,1.29122,1.0,0.61878,0.40226,0.41661,0.0656,test
+Nicaragua,Latin America and Caribbean,2017,6.071,0.7373,1.0,0.6531,0.44755,0.30167,0.13069,test
+Ecuador,Latin America and Caribbean,2017,6.008,1.00082,1.0,0.68564,0.4552,0.15011,0.14013,train
+El Salvador,Latin America and Caribbean,2017,6.003,0.90978,1.0,0.59602,0.43245,0.07826,0.08998,train
+Poland,Central and Eastern Europe,2017,5.973,1.29179,1.0,0.69948,0.52034,0.15847,0.05931,test
+Uzbekistan,Central and Eastern Europe,2017,5.971,0.78644,1.0,0.49827,0.65825,0.41598,0.24653,test
+Italy,Western Europe,2017,5.964,1.39507,1.0,0.85314,0.25645,0.17279,0.02803,test
+Russia,Central and Eastern Europe,2017,5.963,1.28178,1.0,0.54735,0.37378,0.05226,0.03296,train
+Belize,Latin America and Caribbean,2017,5.956,0.90798,1.0,0.45019,0.54751,0.24002,0.09658,train
+Japan,Eastern Asia,2017,5.92,1.41692,1.0,0.91348,0.50563,0.12057,0.16376,test
+Lithuania,Western Europe,2017,5.902,1.31458,1.0,0.62895,0.23423,0.01016,0.01187,train
+Algeria,Middle East and Northern Africa,2017,5.872,1.09186,1.0,0.61758,0.23334,0.06944,0.1461,train
+Latvia,Western Europe,2017,5.85,1.26075,1.0,0.63857,0.32571,0.15307,0.07384,test
+South Korea,Eastern Asia,2017,5.838,1.40168,1.0,0.90021,0.25792,0.20667,0.06328,train
+Moldova,Central and Eastern Europe,2017,5.838,0.72887,1.0,0.58947,0.24073,0.20878,0.01009,train
+Romania,Central and Eastern Europe,2017,5.825,1.21768,1.0,0.68516,0.457,0.13352,0.00439,train
+Bolivia,Latin America and Caribbean,2017,5.823,0.83376,1.0,0.47363,0.55873,0.22556,0.06048,train
+Turkmenistan,Central and Eastern Europe,2017,5.822,1.13078,1.0,0.43773,0.41827,0.24992,0.25927,train
+Kazakhstan,Central and Eastern Europe,2017,5.819,1.28456,1.0,0.60604,0.43745,0.20196,0.11928,train
+Cyprus,Middle East and Northern Africa,2017,5.81,1.34691,1.0,0.83465,0.4712,0.26685,0.15535,train
+Cyprus,Middle East and Northern Africa,2017,5.81,1.34691,1.0,0.83465,0.4712,0.26685,0.15535,test
+Slovenia,Western Europe,2017,5.758,1.34121,1.0,0.79083,0.57258,0.24265,0.04513,train
+Peru,Latin America and Caribbean,2017,5.715,1.03523,1.0,0.63017,0.45,0.12682,0.04705,test
+Mauritius,Sub-Saharan Africa,2017,5.629,1.1894,1.0,0.63801,0.49125,0.36093,0.04218,train
+Cyprus,Middle East and Northern Africa,2017,5.621,1.35594,1.0,0.84471,0.35511,0.27125,0.04124,train
+Cyprus,Middle East and Northern Africa,2017,5.621,1.35594,1.0,0.84471,0.35511,0.27125,0.04124,test
+Estonia,Western Europe,2017,5.611,1.32088,1.0,0.69517,0.47913,0.09889,0.18325,test
+Belarus,Central and Eastern Europe,2017,5.569,1.15656,1.0,0.63771,0.2954,0.15514,0.15631,train
+Libya,Middle East and Northern Africa,2017,5.525,1.1018,1.0,0.52017,0.46573,0.15207,0.09261,train
+Turkey,Middle East and Northern Africa,2017,5.5,1.19827,1.0,0.63761,0.30074,0.04669,0.09967,train
+Paraguay,Latin America and Caribbean,2017,5.493,0.93254,1.0,0.57925,0.47351,0.22415,0.09107,train
+Hong Kong,Eastern Asia,2017,5.472,1.55167,1.0,0.94306,0.49097,0.37447,0.29393,train
+Philippines,Southeastern Asia,2017,5.43,0.8577,1.0,0.46801,0.58521,0.19351,0.09933,train
+Serbia,Western Europe,2017,5.395,1.06932,1.0,0.65078,0.20872,0.22013,0.0409,train
+Jordan,Middle East and Northern Africa,2017,5.336,0.99101,1.0,0.60459,0.41842,0.17217,0.1198,train
+Hungary,Central and Eastern Europe,2017,5.324,1.28601,1.0,0.68776,0.17586,0.0784,0.03664,train
+Jamaica,Latin America and Caribbean,2017,5.311,0.92558,1.0,0.64102,0.47431,0.23382,0.05527,train
+Croatia,Western Europe,2017,5.293,1.22256,0.96798,0.70129,0.25577,0.248,0.0431,train
+Kosovo,Western Europe,2017,5.279,0.95148,1.0,0.54145,0.26029,0.31993,0.05747,train
+China,Eastern Asia,2017,5.273,1.08117,1.0,0.74142,0.47279,0.02881,0.02279,test
+Pakistan,Southern Asia,2017,5.269,0.72688,0.67269,0.40205,0.23522,0.31545,0.12435,train
+Indonesia,Southeastern Asia,2017,5.262,0.99554,1.0,0.49235,0.44332,0.6117,0.01532,train
+Venezuela,Latin America and Caribbean,2017,5.25,1.12843,1.0,0.61714,0.154,0.06502,0.06449,test
+Montenegro,Western Europe,2017,5.237,1.12113,1.0,0.66746,0.19499,0.19791,0.08817,train
+Morocco,Middle East and Northern Africa,2017,5.235,0.87811,0.77486,0.59771,0.40816,0.03221,0.08776,test
+Azerbaijan,Middle East and Northern Africa,2017,5.234,1.1536,1.0,0.54078,0.39816,0.04527,0.18099,train
+Dominican Republic,Latin America and Caribbean,2017,5.23,1.07937,1.0,0.57487,0.55259,0.18697,0.11395,train
+Greece,Western Europe,2017,5.227,1.28949,1.0,0.8102,0.09573,0.0,0.04329,train
+Lebanon,Middle East and Northern Africa,2017,5.225,1.07499,1.0,0.73508,0.28852,0.26445,0.03751,train
+Portugal,Western Europe,2017,5.195,1.31518,1.0,0.79584,0.49847,0.0951,0.01587,train
+Bosnia and Herzegovina,Western Europe,2017,5.182,0.98241,1.0,0.70519,0.2044,0.32887,0.0,test
+Honduras,Latin America and Caribbean,2017,5.181,0.73057,1.0,0.58257,0.34808,0.23619,0.07335,test
+North Macedonia,Western Europe,2017,5.175,1.06458,1.0,0.64495,0.32591,0.25376,0.06028,train
+Somalia,Sub-Saharan Africa,2017,5.151,0.02264,0.72115,0.11399,0.60213,0.29163,0.28241,train
+Vietnam,Southeastern Asia,2017,5.074,0.78855,1.0,0.65217,0.57106,0.23497,0.08763,train
+Nigeria,Sub-Saharan Africa,2017,5.074,0.78376,1.0,0.05692,0.39495,0.23095,0.02612,test
+Tajikistan,Central and Eastern Europe,2017,5.041,0.52471,1.0,0.52924,0.47157,0.249,0.14638,train
+Bhutan,Southern Asia,2017,5.011,0.88542,1.0,0.49588,0.50154,0.47405,0.17338,test
+Kyrgyzstan,Central and Eastern Europe,2017,5.004,0.59622,1.0,0.55346,0.45494,0.42858,0.03944,train
+Nepal,Southern Asia,2017,4.962,0.47982,1.0,0.50413,0.44031,0.3941,0.07298,train
+Mongolia,Eastern Asia,2017,4.955,1.02724,1.0,0.55778,0.39414,0.33846,0.0329,train
+South Africa,Sub-Saharan Africa,2017,4.829,1.0547,1.0,0.18708,0.47925,0.13936,0.07251,train
+Tunisia,Middle East and Northern Africa,2017,4.805,1.00727,0.86835,0.61321,0.28968,0.04969,0.08672,train
+Palestinian Territories,Middle East and Northern Africa,2017,4.775,0.71625,1.0,0.56567,0.25471,0.11417,0.08928,train
+Egypt,Middle East and Northern Africa,2017,4.735,0.9897,0.99747,0.52019,0.28211,0.12863,0.11438,train
+Bulgaria,Central and Eastern Europe,2017,4.714,1.16146,1.0,0.70822,0.28923,0.11318,0.01105,train
+Sierra Leone,Sub-Saharan Africa,2017,4.709,0.36842,0.98414,0.00556,0.3187,0.29304,0.0711,test
+Cameroon,Sub-Saharan Africa,2017,4.695,0.56431,0.94602,0.13289,0.43039,0.2363,0.05131,train
+Iran,Southern Asia,2017,4.692,1.15687,0.71155,0.63933,0.24932,0.38724,0.04876,train
+Albania,Western Europe,2017,4.644,0.99619,0.80369,0.73116,0.3815,0.20131,0.03986,train
+Bangladesh,Southern Asia,2017,4.608,0.58668,0.73513,0.53324,0.47836,0.17226,0.12372,test
+Namibia,Sub-Saharan Africa,2017,4.574,0.96443,1.0,0.33861,0.5203,0.07713,0.09315,test
+Kenya,Sub-Saharan Africa,2017,4.553,0.56048,1.0,0.30999,0.45276,0.44486,0.06464,train
+Mozambique,Sub-Saharan Africa,2017,4.55,0.23431,0.8707,0.10665,0.48079,0.32223,0.17944,train
+Myanmar,Southeastern Asia,2017,4.545,0.36711,1.0,0.39752,0.51449,0.8,0.18882,test
+Senegal,Sub-Saharan Africa,2017,4.535,0.47931,1.0,0.40936,0.37792,0.18347,0.11546,train
+Zambia,Sub-Saharan Africa,2017,4.514,0.63641,1.0,0.25784,0.4616,0.24958,0.07821,train
+Iraq,Middle East and Northern Africa,2017,4.497,1.10271,0.97861,0.50118,0.28856,0.19964,0.10722,train
+Gabon,Sub-Saharan Africa,2017,4.465,1.19821,1.0,0.35658,0.31233,0.04379,0.07605,test
+Ethiopia,Sub-Saharan Africa,2017,4.46,0.33923,0.86467,0.35341,0.40884,0.31265,0.16546,test
+Sri Lanka,Southern Asia,2017,4.44,1.00985,1.0,0.62513,0.56121,0.49086,0.07365,train
+Armenia,Middle East and Northern Africa,2017,4.376,0.9006,1.0,0.63752,0.1983,0.08349,0.02667,train
+India,Southern Asia,2017,4.315,0.79222,0.75437,0.45543,0.46999,0.23154,0.09223,train
+Mauritania,Sub-Saharan Africa,2017,4.292,0.64846,1.0,0.28535,0.0961,0.20187,0.13696,train
+Congo (Brazzaville),Sub-Saharan Africa,2017,4.291,0.80896,0.83204,0.28996,0.43503,0.12085,0.07962,train
+Georgia,Middle East and Northern Africa,2017,4.286,0.95061,0.57061,0.64955,0.30941,0.05401,0.25167,test
+Congo (Kinshasa),Sub-Saharan Africa,2017,4.28,0.0921,1.0,0.19141,0.23596,0.24646,0.06024,train
+Mali,Sub-Saharan Africa,2017,4.19,0.47618,1.0,0.16937,0.30661,0.18335,0.10497,train
+Ivory Coast,Sub-Saharan Africa,2017,4.18,0.60305,0.90478,0.04864,0.44771,0.20124,0.13006,test
+Cambodia,Southeastern Asia,2017,4.168,0.60177,1.0,0.42978,0.63338,0.38592,0.06811,test
+Sudan,Middle East and Northern Africa,2017,4.139,0.65952,1.0,0.29092,0.015,0.18232,0.08985,test
+Ghana,Sub-Saharan Africa,2017,4.12,0.66722,0.87366,0.29564,0.42303,0.25692,0.02534,train
+Ukraine,Central and Eastern Europe,2017,4.096,0.89465,1.0,0.5759,0.12297,0.27006,0.02303,test
+Uganda,Sub-Saharan Africa,2017,4.081,0.38143,1.0,0.21763,0.44319,0.32577,0.05707,train
+Burkina Faso,Sub-Saharan Africa,2017,4.032,0.35023,1.0,0.21584,0.32437,0.25086,0.12033,train
+Niger,Sub-Saharan Africa,2017,4.028,0.16193,0.99303,0.26851,0.36366,0.22867,0.13857,train
+Malawi,Sub-Saharan Africa,2017,3.97,0.23344,0.51257,0.31509,0.46691,0.28717,0.07271,train
+Chad,Sub-Saharan Africa,2017,3.936,0.43801,0.95386,0.04113,0.16234,0.21611,0.05358,train
+Zimbabwe,Sub-Saharan Africa,2017,3.875,0.37585,1.0,0.19676,0.33638,0.18914,0.09538,train
+Lesotho,Sub-Saharan Africa,2017,3.808,0.52102,1.0,0.0,0.39066,0.1575,0.11909,train
+Angola,Sub-Saharan Africa,2017,3.795,0.85843,1.0,0.04987,0.0,0.09793,0.06972,train
+Afghanistan,Southern Asia,2017,3.794,0.40148,0.58154,0.18075,0.10618,0.31187,0.06116,train
+Botswana,Sub-Saharan Africa,2017,3.766,1.12209,1.0,0.34176,0.5052,0.09935,0.09858,test
+Benin,Sub-Saharan Africa,2017,3.657,0.43109,0.4353,0.20993,0.42596,0.20795,0.06093,test
+Madagascar,Sub-Saharan Africa,2017,3.644,0.30581,0.91302,0.37522,0.1892,0.20873,0.06723,train
+Haiti,Latin America and Caribbean,2017,3.603,0.36861,0.64045,0.27732,0.03037,0.4892,0.09987,train
+Yemen,Middle East and Northern Africa,2017,3.593,0.59168,0.93538,0.31008,0.24946,0.10413,0.05677,train
+South Sudan,Sub-Saharan Africa,2017,3.591,0.39725,0.60132,0.16349,0.14706,0.28567,0.11679,train
+Liberia,Sub-Saharan Africa,2017,3.533,0.11904,0.87212,0.22992,0.33288,0.26655,0.03895,test
+Guinea,Sub-Saharan Africa,2017,3.507,0.24455,0.79124,0.19413,0.34859,0.26482,0.11094,train
+Togo,Sub-Saharan Africa,2017,3.495,0.30544,0.43188,0.24711,0.38043,0.1969,0.09567,train
+Rwanda,Sub-Saharan Africa,2017,3.471,0.36875,0.94571,0.32642,0.58184,0.25276,0.45522,test
+Syria,Middle East and Northern Africa,2017,3.462,0.77715,0.3961,0.50053,0.08154,0.49366,0.15135,train
+Tanzania,Sub-Saharan Africa,2017,3.349,0.51114,1.0,0.36451,0.39002,0.35426,0.06604,test
+Burundi,Sub-Saharan Africa,2017,2.905,0.09162,0.62979,0.15161,0.0599,0.20444,0.08415,train
+Central African Republic,Sub-Saharan Africa,2017,2.693,0.0,0.0,0.01877,0.27084,0.28088,0.05657,train
+Finland,Western Europe,2018,7.632,1.305,1.0,0.874,0.681,0.202,0.393,test
+Norway,Western Europe,2018,7.594,1.456,1.0,0.861,0.686,0.286,0.34,train
+Denmark,Western Europe,2018,7.555,1.351,1.0,0.868,0.683,0.284,0.408,train
+Iceland,Western Europe,2018,7.495,1.343,1.0,0.914,0.677,0.353,0.138,train
+Switzerland,Western Europe,2018,7.487,1.42,1.0,0.927,0.66,0.256,0.357,train
+Netherlands,Western Europe,2018,7.441,1.361,1.0,0.878,0.638,0.333,0.295,train
+Canada,North America,2018,7.328,1.33,1.0,0.896,0.653,0.321,0.291,train
+New Zealand,Australia and New Zealand,2018,7.324,1.268,1.0,0.876,0.669,0.365,0.389,train
+Sweden,Western Europe,2018,7.314,1.355,1.0,0.913,0.659,0.285,0.383,train
+Australia,Australia and New Zealand,2018,7.272,1.34,1.0,0.91,0.647,0.361,0.302,train
+United Kingdom,Western Europe,2018,7.19,1.244,1.0,0.888,0.464,0.262,0.082,train
+Austria,Western Europe,2018,7.139,1.341,1.0,0.891,0.617,0.242,0.224,train
+Costa Rica,Latin America and Caribbean,2018,7.072,1.01,1.0,0.817,0.632,0.143,0.101,test
+Ireland,Western Europe,2018,6.977,1.448,1.0,0.876,0.614,0.307,0.306,test
+Germany,Western Europe,2018,6.965,1.34,1.0,0.861,0.586,0.273,0.28,train
+Belgium,Western Europe,2018,6.927,1.324,1.0,0.894,0.583,0.188,0.24,test
+Luxembourg,Western Europe,2018,6.91,1.576,1.0,0.896,0.632,0.196,0.321,train
+United States,North America,2018,6.886,1.398,1.0,0.819,0.547,0.291,0.133,train
+Israel,Middle East and Northern Africa,2018,6.814,1.301,1.0,0.883,0.533,0.354,0.272,train
+United Arab Emirates,Middle East and Northern Africa,2018,6.774,2.0,0.776,0.67,0.284,0.186,0.3119825,train
+Czech Republic,Central and Eastern Europe,2018,6.711,1.233,1.0,0.854,0.543,0.064,0.034,test
+Malta,Western Europe,2018,6.627,1.27,1.0,0.884,0.645,0.376,0.142,train
+France,Western Europe,2018,6.489,1.293,1.0,0.908,0.52,0.098,0.176,train
+Mexico,Latin America and Caribbean,2018,6.488,1.038,1.0,0.761,0.479,0.069,0.095,train
+Chile,Latin America and Caribbean,2018,6.476,1.131,1.0,0.808,0.431,0.197,0.061,train
+Taiwan,Eastern Asia,2018,6.441,1.365,1.0,0.857,0.418,0.151,0.078,test
+Panama,Latin America and Caribbean,2018,6.43,1.112,1.0,0.759,0.597,0.125,0.063,train
+Brazil,Latin America and Caribbean,2018,6.419,0.986,1.0,0.675,0.493,0.11,0.088,train
+Argentina,Latin America and Caribbean,2018,6.388,1.073,1.0,0.744,0.57,0.062,0.054,train
+Guatemala,Latin America and Caribbean,2018,6.382,0.781,1.0,0.608,0.604,0.179,0.071,test
+Uruguay,Latin America and Caribbean,2018,6.379,1.093,1.0,0.771,0.625,0.13,0.155,train
+Qatar,Middle East and Northern Africa,2018,6.374,1.649,1.0,0.748,0.654,0.256,0.171,test
+Saudi Arabia,Middle East and Northern Africa,2018,6.371,1.379,1.0,0.633,0.509,0.098,0.127,train
+Singapore,Southeastern Asia,2018,6.343,1.529,1.0,1.0,0.631,0.261,0.457,train
+Malaysia,Southeastern Asia,2018,6.322,1.161,1.0,0.669,0.356,0.311,0.059,train
+Spain,Western Europe,2018,6.31,1.251,1.0,0.965,0.449,0.142,0.074,train
+Colombia,Latin America and Caribbean,2018,6.26,0.96,1.0,0.635,0.531,0.099,0.039,test
+Trinidad and Tobago,Latin America and Caribbean,2018,6.192,1.223,1.0,0.564,0.575,0.171,0.019,test
+Slovakia,Central and Eastern Europe,2018,6.173,1.21,1.0,0.776,0.354,0.118,0.014,train
+El Salvador,Latin America and Caribbean,2018,6.167,0.806,1.0,0.639,0.461,0.065,0.082,train
+Nicaragua,Latin America and Caribbean,2018,6.141,0.668,1.0,0.7,0.527,0.208,0.128,train
+Poland,Central and Eastern Europe,2018,6.123,1.176,1.0,0.781,0.546,0.108,0.064,train
+Bahrain,Middle East and Northern Africa,2018,6.105,1.338,1.0,0.698,0.594,0.243,0.123,test
+Uzbekistan,Central and Eastern Europe,2018,6.096,0.719,1.0,0.605,0.724,0.328,0.259,test
+Kuwait,Middle East and Northern Africa,2018,6.083,1.474,1.0,0.675,0.554,0.167,0.106,test
+Thailand,Southeastern Asia,2018,6.072,1.016,1.0,0.707,0.637,0.364,0.029,test
+Italy,Western Europe,2018,6.0,1.264,1.0,0.946,0.281,0.137,0.028,test
+Ecuador,Latin America and Caribbean,2018,5.973,0.889,1.0,0.736,0.556,0.114,0.12,train
+Belize,Latin America and Caribbean,2018,5.956,0.807,1.0,0.474,0.593,0.183,0.089,train
+Lithuania,Western Europe,2018,5.952,1.197,1.0,0.716,0.35,0.026,0.006,train
+Slovenia,Western Europe,2018,5.948,1.219,1.0,0.856,0.633,0.16,0.051,train
+Romania,Central and Eastern Europe,2018,5.945,1.116,1.0,0.726,0.528,0.088,0.001,test
+Latvia,Western Europe,2018,5.933,1.148,1.0,0.671,0.363,0.092,0.066,test
+Japan,Eastern Asia,2018,5.915,1.294,1.0,0.988,0.553,0.079,0.15,test
+Mauritius,Sub-Saharan Africa,2018,5.891,1.09,1.0,0.684,0.584,0.245,0.05,train
+Jamaica,Latin America and Caribbean,2018,5.89,0.819,1.0,0.693,0.575,0.096,0.031,test
+South Korea,Eastern Asia,2018,5.875,1.266,1.0,0.955,0.244,0.175,0.051,train
+Cyprus,Middle East and Northern Africa,2018,5.835,1.229,1.0,0.909,0.495,0.179,0.154,train
+Cyprus,Middle East and Northern Africa,2018,5.835,1.229,1.0,0.909,0.495,0.179,0.154,train
+Russia,Central and Eastern Europe,2018,5.81,1.151,1.0,0.599,0.399,0.065,0.025,train
+Kazakhstan,Central and Eastern Europe,2018,5.79,1.143,1.0,0.631,0.454,0.148,0.121,train
+Cyprus,Middle East and Northern Africa,2018,5.762,1.229,1.0,0.909,0.423,0.202,0.035,train
+Cyprus,Middle East and Northern Africa,2018,5.762,1.229,1.0,0.909,0.423,0.202,0.035,train
+Bolivia,Latin America and Caribbean,2018,5.752,0.751,1.0,0.508,0.606,0.141,0.054,train
+Estonia,Western Europe,2018,5.739,1.2,1.0,0.737,0.553,0.086,0.174,train
+Paraguay,Latin America and Caribbean,2018,5.681,0.835,1.0,0.615,0.541,0.162,0.074,test
+Peru,Latin America and Caribbean,2018,5.663,0.934,1.0,0.674,0.53,0.092,0.034,train
+Kosovo,Western Europe,2018,5.662,0.855,1.0,0.578,0.448,0.274,0.023,train
+Moldova,Central and Eastern Europe,2018,5.64,0.657,1.0,0.62,0.232,0.171,0.0,train
+Turkmenistan,Central and Eastern Europe,2018,5.636,1.016,1.0,0.517,0.417,0.199,0.037,test
+Hungary,Central and Eastern Europe,2018,5.62,1.171,1.0,0.732,0.259,0.061,0.022,test
+Libya,Middle East and Northern Africa,2018,5.566,0.985,1.0,0.553,0.496,0.116,0.148,train
+Philippines,Southeastern Asia,2018,5.524,0.775,1.0,0.513,0.643,0.12,0.105,train
+Honduras,Latin America and Caribbean,2018,5.504,0.62,1.0,0.622,0.459,0.197,0.074,train
+Belarus,Central and Eastern Europe,2018,5.483,1.039,1.0,0.7,0.307,0.101,0.154,train
+Turkey,Middle East and Northern Africa,2018,5.483,1.148,1.0,0.686,0.324,0.106,0.109,test
+Pakistan,Southern Asia,2018,5.472,0.652,0.81,0.424,0.334,0.216,0.113,test
+Hong Kong,Eastern Asia,2018,5.43,1.405,1.0,1.0,0.524,0.246,0.291,train
+Portugal,Western Europe,2018,5.41,1.188,1.0,0.884,0.562,0.055,0.017,train
+Serbia,Western Europe,2018,5.398,0.975,1.0,0.685,0.288,0.134,0.043,train
+Greece,Western Europe,2018,5.358,1.154,1.0,0.879,0.131,0.0,0.044,train
+Lebanon,Middle East and Northern Africa,2018,5.358,0.965,1.0,0.785,0.503,0.214,0.136,train
+Montenegro,Western Europe,2018,5.347,1.017,1.0,0.729,0.259,0.111,0.081,train
+Croatia,Western Europe,2018,5.321,1.115,1.0,0.737,0.38,0.12,0.039,train
+Dominican Republic,Latin America and Caribbean,2018,5.302,0.982,1.0,0.614,0.578,0.12,0.106,train
+Algeria,Middle East and Northern Africa,2018,5.295,0.979,1.0,0.687,0.077,0.055,0.135,train
+Morocco,Middle East and Northern Africa,2018,5.254,0.779,0.797,0.669,0.46,0.026,0.074,train
+China,Eastern Asia,2018,5.246,0.989,1.0,0.799,0.597,0.029,0.103,train
+Azerbaijan,Middle East and Northern Africa,2018,5.201,1.024,1.0,0.603,0.43,0.031,0.176,train
+Tajikistan,Central and Eastern Europe,2018,5.199,0.474,1.0,0.598,0.292,0.187,0.034,test
+North Macedonia,Western Europe,2018,5.185,0.959,1.0,0.691,0.394,0.173,0.052,test
+Jordan,Middle East and Northern Africa,2018,5.161,0.822,1.0,0.645,0.468,0.13,0.134,train
+Nigeria,Sub-Saharan Africa,2018,5.155,0.689,1.0,0.048,0.462,0.201,0.032,train
+Kyrgyzstan,Central and Eastern Europe,2018,5.131,0.53,1.0,0.594,0.54,0.281,0.035,train
+Bosnia and Herzegovina,Western Europe,2018,5.129,0.915,1.0,0.758,0.28,0.216,0.0,train
+Mongolia,Eastern Asia,2018,5.125,0.914,1.0,0.575,0.395,0.253,0.032,train
+Vietnam,Southeastern Asia,2018,5.103,0.715,1.0,0.702,0.618,0.177,0.079,train
+Indonesia,Southeastern Asia,2018,5.093,0.899,1.0,0.522,0.538,0.484,0.018,train
+Bhutan,Southern Asia,2018,5.082,0.796,1.0,0.527,0.541,0.364,0.171,train
+Somalia,Sub-Saharan Africa,2018,4.982,0.0,0.712,0.115,0.674,0.238,0.282,train
+Cameroon,Sub-Saharan Africa,2018,4.975,0.535,0.891,0.182,0.454,0.183,0.043,test
+Bulgaria,Central and Eastern Europe,2018,4.933,1.054,1.0,0.712,0.359,0.064,0.009,train
+Nepal,Southern Asia,2018,4.88,0.425,1.0,0.539,0.526,0.302,0.078,train
+Venezuela,Latin America and Caribbean,2018,4.806,0.996,1.0,0.657,0.133,0.056,0.052,train
+Gabon,Sub-Saharan Africa,2018,4.758,1.036,1.0,0.404,0.356,0.032,0.052,train
+Palestinian Territories,Middle East and Northern Africa,2018,4.743,0.642,1.0,0.602,0.266,0.086,0.076,train
+South Africa,Sub-Saharan Africa,2018,4.724,0.94,1.0,0.33,0.516,0.103,0.056,train
+Iran,Southern Asia,2018,4.707,1.059,0.771,0.691,0.459,0.282,0.129,train
+Ivory Coast,Sub-Saharan Africa,2018,4.671,0.541,0.872,0.08,0.467,0.146,0.103,train
+Ghana,Sub-Saharan Africa,2018,4.657,0.592,0.896,0.337,0.499,0.212,0.029,train
+Senegal,Sub-Saharan Africa,2018,4.631,0.429,1.0,0.433,0.406,0.138,0.082,train
+Laos,Southeastern Asia,2018,4.623,0.72,1.0,0.441,0.626,0.23,0.174,test
+Tunisia,Middle East and Northern Africa,2018,4.592,0.9,0.906,0.69,0.271,0.04,0.063,train
+Albania,Western Europe,2018,4.586,0.916,0.817,0.79,0.419,0.149,0.032,test
+Sierra Leone,Sub-Saharan Africa,2018,4.571,0.256,0.813,0.0,0.355,0.238,0.053,test
+Congo (Brazzaville),Sub-Saharan Africa,2018,4.559,0.682,0.811,0.343,0.514,0.091,0.077,test
+Bangladesh,Southern Asia,2018,4.5,0.532,0.85,0.579,0.58,0.153,0.144,train
+Sri Lanka,Southern Asia,2018,4.471,0.918,1.0,0.672,0.585,0.307,0.05,train
+Iraq,Middle East and Northern Africa,2018,4.456,1.01,0.971,0.536,0.304,0.148,0.095,train
+Mali,Sub-Saharan Africa,2018,4.447,0.37,1.0,0.152,0.367,0.139,0.056,train
+Namibia,Sub-Saharan Africa,2018,4.441,0.874,1.0,0.365,0.519,0.051,0.064,test
+Cambodia,Southeastern Asia,2018,4.433,0.549,1.0,0.457,0.696,0.256,0.065,train
+Burkina Faso,Sub-Saharan Africa,2018,4.424,0.314,1.0,0.254,0.312,0.175,0.128,test
+Egypt,Middle East and Northern Africa,2018,4.419,0.885,1.0,0.553,0.312,0.092,0.107,test
+Mozambique,Sub-Saharan Africa,2018,4.417,0.198,0.902,0.173,0.531,0.206,0.158,train
+Kenya,Sub-Saharan Africa,2018,4.41,0.493,1.0,0.454,0.504,0.352,0.055,train
+Zambia,Sub-Saharan Africa,2018,4.377,0.562,1.0,0.295,0.503,0.221,0.082,train
+Mauritania,Sub-Saharan Africa,2018,4.356,0.557,1.0,0.292,0.129,0.134,0.093,test
+Ethiopia,Sub-Saharan Africa,2018,4.35,0.308,0.95,0.391,0.452,0.22,0.146,test
+Georgia,Middle East and Northern Africa,2018,4.34,0.853,0.592,0.643,0.375,0.038,0.215,train
+Armenia,Middle East and Northern Africa,2018,4.321,0.816,0.99,0.666,0.26,0.077,0.028,train
+Myanmar,Southeastern Asia,2018,4.308,0.682,1.0,0.429,0.58,0.598,0.178,train
+Chad,Sub-Saharan Africa,2018,4.301,0.358,0.907,0.053,0.189,0.181,0.06,train
+Congo (Kinshasa),Sub-Saharan Africa,2018,4.245,0.069,1.0,0.204,0.312,0.197,0.052,train
+India,Southern Asia,2018,4.19,0.721,0.747,0.485,0.539,0.172,0.093,test
+Niger,Sub-Saharan Africa,2018,4.166,0.131,0.867,0.221,0.39,0.175,0.099,test
+Uganda,Sub-Saharan Africa,2018,4.161,0.322,1.0,0.237,0.45,0.259,0.061,test
+Benin,Sub-Saharan Africa,2018,4.141,0.378,0.372,0.24,0.44,0.163,0.067,train
+Sudan,Middle East and Northern Africa,2018,4.139,0.605,1.0,0.312,0.016,0.134,0.082,train
+Ukraine,Central and Eastern Europe,2018,4.103,0.793,1.0,0.609,0.163,0.187,0.011,train
+Togo,Sub-Saharan Africa,2018,3.999,0.259,0.474,0.253,0.434,0.158,0.101,test
+Guinea,Sub-Saharan Africa,2018,3.964,0.344,0.792,0.211,0.394,0.185,0.094,train
+Lesotho,Sub-Saharan Africa,2018,3.808,0.472,1.0,0.079,0.423,0.116,0.112,test
+Angola,Sub-Saharan Africa,2018,3.795,0.73,1.0,0.269,0.0,0.079,0.061,train
+Madagascar,Sub-Saharan Africa,2018,3.774,0.262,0.908,0.402,0.221,0.155,0.049,train
+Zimbabwe,Sub-Saharan Africa,2018,3.692,0.357,1.0,0.248,0.406,0.132,0.099,test
+Afghanistan,Southern Asia,2018,3.632,0.332,0.537,0.255,0.085,0.191,0.036,train
+Botswana,Sub-Saharan Africa,2018,3.59,1.017,1.0,0.417,0.557,0.042,0.092,test
+Malawi,Sub-Saharan Africa,2018,3.587,0.186,0.541,0.306,0.531,0.21,0.08,test
+Haiti,Latin America and Caribbean,2018,3.582,0.315,0.714,0.289,0.025,0.392,0.104,train
+Liberia,Sub-Saharan Africa,2018,3.495,0.076,0.858,0.267,0.419,0.206,0.03,test
+Syria,Middle East and Northern Africa,2018,3.462,0.689,0.382,0.539,0.088,0.376,0.144,train
+Rwanda,Sub-Saharan Africa,2018,3.408,0.332,0.896,0.4,0.636,0.2,0.444,train
+Yemen,Middle East and Northern Africa,2018,3.355,0.442,1.0,0.343,0.244,0.083,0.064,train
+Tanzania,Sub-Saharan Africa,2018,3.303,0.455,0.991,0.381,0.481,0.27,0.097,test
+South Sudan,Sub-Saharan Africa,2018,3.254,0.337,0.608,0.177,0.112,0.224,0.106,train
+Central African Republic,Sub-Saharan Africa,2018,3.083,0.024,0.0,0.01,0.305,0.218,0.038,train
+Burundi,Sub-Saharan Africa,2018,2.905,0.091,0.627,0.145,0.065,0.149,0.076,test
+Finland,Western Europe,2019,7.769,1.34,1.0,0.986,0.596,0.153,0.393,test
+Denmark,Western Europe,2019,7.6,1.383,1.0,0.996,0.592,0.252,0.41,test
+Norway,Western Europe,2019,7.554,1.488,1.0,1.0,0.603,0.271,0.341,train
+Iceland,Western Europe,2019,7.494,1.38,1.0,1.0,0.591,0.354,0.118,train
+Netherlands,Western Europe,2019,7.488,1.396,1.0,0.999,0.557,0.322,0.298,train
+Switzerland,Western Europe,2019,7.48,1.452,1.0,1.0,0.572,0.263,0.343,train
+Sweden,Western Europe,2019,7.343,1.387,1.0,1.0,0.574,0.267,0.373,train
+New Zealand,Australia and New Zealand,2019,7.307,1.303,1.0,1.0,0.585,0.33,0.38,test
+Canada,North America,2019,7.278,1.365,1.0,1.0,0.584,0.285,0.308,train
+Austria,Western Europe,2019,7.246,1.376,1.0,1.0,0.532,0.244,0.226,test
+Australia,Australia and New Zealand,2019,7.228,1.372,1.0,1.0,0.557,0.332,0.29,train
+Costa Rica,Latin America and Caribbean,2019,7.167,1.034,1.0,0.963,0.558,0.144,0.093,train
+Israel,Middle East and Northern Africa,2019,7.139,1.276,1.0,1.0,0.371,0.261,0.082,train
+Luxembourg,Western Europe,2019,7.09,1.609,1.0,1.0,0.526,0.194,0.316,train
+United Kingdom,Western Europe,2019,7.054,1.333,1.0,0.996,0.45,0.348,0.278,test
+Ireland,Western Europe,2019,7.021,1.499,1.0,0.999,0.516,0.298,0.31,train
+Germany,Western Europe,2019,6.985,1.373,1.0,0.987,0.495,0.261,0.265,train
+Belgium,Western Europe,2019,6.923,1.356,1.0,0.986,0.473,0.16,0.21,test
+United States,North America,2019,6.892,1.433,1.0,0.874,0.454,0.28,0.128,train
+Czech Republic,Central and Eastern Europe,2019,6.852,1.269,1.0,0.92,0.457,0.046,0.036,train
+United Arab Emirates,Middle East and Northern Africa,2019,6.825,1.503,1.0,0.825,0.598,0.262,0.182,train
+Malta,Western Europe,2019,6.726,1.3,1.0,0.999,0.564,0.375,0.151,train
+Mexico,Latin America and Caribbean,2019,6.595,1.07,1.0,0.861,0.433,0.074,0.073,train
+France,Western Europe,2019,6.592,1.324,1.0,1.0,0.436,0.111,0.183,test
+Taiwan,Eastern Asia,2019,6.446,1.368,1.0,0.914,0.351,0.242,0.097,test
+Chile,Latin America and Caribbean,2019,6.444,1.159,1.0,0.92,0.357,0.187,0.056,test
+Guatemala,Latin America and Caribbean,2019,6.436,0.8,1.0,0.746,0.535,0.175,0.078,train
+Saudi Arabia,Middle East and Northern Africa,2019,6.375,1.403,1.0,0.795,0.439,0.08,0.132,train
+Qatar,Middle East and Northern Africa,2019,6.374,1.684,1.0,0.871,0.555,0.22,0.167,test
+Spain,Western Europe,2019,6.354,1.286,1.0,1.0,0.362,0.153,0.079,train
+Panama,Latin America and Caribbean,2019,6.321,1.149,1.0,0.91,0.516,0.109,0.054,train
+Brazil,Latin America and Caribbean,2019,6.3,1.004,1.0,0.802,0.39,0.099,0.086,test
+Uruguay,Latin America and Caribbean,2019,6.293,1.124,1.0,0.891,0.523,0.127,0.15,test
+Singapore,Southeastern Asia,2019,6.262,1.572,1.0,1.0,0.556,0.271,0.453,train
+El Salvador,Latin America and Caribbean,2019,6.253,0.794,1.0,0.789,0.43,0.093,0.074,train
+Italy,Western Europe,2019,6.223,1.294,1.0,1.0,0.231,0.158,0.03,train
+Bahrain,Middle East and Northern Africa,2019,6.199,1.362,1.0,0.871,0.536,0.255,0.11,train
+Slovakia,Central and Eastern Europe,2019,6.198,1.246,1.0,0.881,0.334,0.121,0.014,train
+Trinidad and Tobago,Latin America and Caribbean,2019,6.192,1.231,1.0,0.713,0.489,0.185,0.016,train
+Poland,Central and Eastern Europe,2019,6.182,1.206,1.0,0.884,0.483,0.117,0.05,train
+Uzbekistan,Central and Eastern Europe,2019,6.174,0.745,1.0,0.756,0.631,0.322,0.24,train
+Lithuania,Western Europe,2019,6.149,1.238,1.0,0.818,0.291,0.043,0.042,train
+Colombia,Latin America and Caribbean,2019,6.125,0.985,1.0,0.841,0.47,0.099,0.034,train
+Slovenia,Western Europe,2019,6.118,1.258,1.0,0.953,0.564,0.144,0.057,train
+Nicaragua,Latin America and Caribbean,2019,6.105,0.694,1.0,0.835,0.435,0.2,0.127,test
+Kosovo,Western Europe,2019,6.1,0.882,1.0,0.758,0.489,0.262,0.006,train
+Argentina,Latin America and Caribbean,2019,6.086,1.092,1.0,0.881,0.471,0.066,0.05,test
+Romania,Central and Eastern Europe,2019,6.07,1.162,1.0,0.825,0.462,0.083,0.005,test
+Cyprus,Middle East and Northern Africa,2019,6.046,1.263,1.0,1.0,0.406,0.19,0.041,train
+Cyprus,Middle East and Northern Africa,2019,6.046,1.263,1.0,1.0,0.406,0.19,0.041,test
+Ecuador,Latin America and Caribbean,2019,6.028,0.912,1.0,0.868,0.498,0.126,0.087,test
+Kuwait,Middle East and Northern Africa,2019,6.021,1.5,1.0,0.808,0.493,0.142,0.097,train
+Thailand,Southeastern Asia,2019,6.008,1.05,1.0,0.828,0.557,0.359,0.028,train
+Latvia,Western Europe,2019,5.94,1.187,1.0,0.812,0.264,0.075,0.064,train
+South Korea,Eastern Asia,2019,5.895,1.301,1.0,1.0,0.159,0.175,0.056,train
+Estonia,Western Europe,2019,5.893,1.237,1.0,0.874,0.495,0.103,0.161,test
+Jamaica,Latin America and Caribbean,2019,5.89,0.831,1.0,0.831,0.49,0.107,0.028,train
+Mauritius,Sub-Saharan Africa,2019,5.888,1.12,1.0,0.798,0.498,0.215,0.06,train
+Japan,Eastern Asia,2019,5.886,1.327,1.0,1.0,0.445,0.069,0.14,test
+Honduras,Latin America and Caribbean,2019,5.86,0.642,1.0,0.828,0.507,0.246,0.078,train
+Kazakhstan,Central and Eastern Europe,2019,5.809,1.173,1.0,0.729,0.41,0.146,0.096,train
+Bolivia,Latin America and Caribbean,2019,5.779,0.776,1.0,0.706,0.511,0.137,0.064,train
+Hungary,Central and Eastern Europe,2019,5.758,1.201,1.0,0.828,0.199,0.081,0.02,train
+Paraguay,Latin America and Caribbean,2019,5.743,0.855,1.0,0.777,0.514,0.184,0.08,train
+Cyprus,Middle East and Northern Africa,2019,5.718,1.263,1.0,1.0,0.417,0.191,0.162,train
+Cyprus,Middle East and Northern Africa,2019,5.718,1.263,1.0,1.0,0.417,0.191,0.162,test
+Peru,Latin America and Caribbean,2019,5.697,0.96,1.0,0.854,0.455,0.083,0.027,train
+Portugal,Western Europe,2019,5.693,1.221,1.0,0.999,0.508,0.047,0.025,train
+Pakistan,Southern Asia,2019,5.653,0.677,0.886,0.535,0.313,0.22,0.098,train
+Russia,Central and Eastern Europe,2019,5.648,1.183,1.0,0.726,0.334,0.082,0.031,train
+Philippines,Southeastern Asia,2019,5.631,0.807,1.0,0.657,0.558,0.117,0.107,train
+Serbia,Western Europe,2019,5.603,1.004,1.0,0.854,0.282,0.137,0.039,train
+Moldova,Central and Eastern Europe,2019,5.529,0.685,1.0,0.739,0.245,0.181,0.0,train
+Libya,Middle East and Northern Africa,2019,5.525,1.044,1.0,0.673,0.416,0.133,0.152,test
+Montenegro,Western Europe,2019,5.523,1.051,1.0,0.871,0.197,0.142,0.08,test
+Tajikistan,Central and Eastern Europe,2019,5.467,0.493,1.0,0.718,0.389,0.23,0.144,train
+Croatia,Western Europe,2019,5.432,1.155,1.0,0.914,0.296,0.119,0.022,train
+Hong Kong,Eastern Asia,2019,5.43,1.438,1.0,1.0,0.44,0.258,0.287,train
+Dominican Republic,Latin America and Caribbean,2019,5.425,1.015,1.0,0.779,0.497,0.113,0.101,train
+Bosnia and Herzegovina,Western Europe,2019,5.386,0.945,1.0,0.845,0.212,0.263,0.006,test
+Turkey,Middle East and Northern Africa,2019,5.373,1.183,1.0,0.808,0.195,0.083,0.106,test
+Malaysia,Southeastern Asia,2019,5.339,1.221,1.0,0.828,0.508,0.26,0.024,train
+Belarus,Central and Eastern Europe,2019,5.323,1.067,1.0,0.789,0.235,0.094,0.142,test
+Greece,Western Europe,2019,5.287,1.181,1.0,0.999,0.067,0.0,0.034,test
+Mongolia,Eastern Asia,2019,5.285,0.948,1.0,0.667,0.317,0.235,0.038,train
+North Macedonia,Western Europe,2019,5.274,0.983,1.0,0.838,0.345,0.185,0.034,train
+Nigeria,Sub-Saharan Africa,2019,5.265,0.696,1.0,0.245,0.426,0.215,0.041,train
+Kyrgyzstan,Central and Eastern Europe,2019,5.261,0.551,1.0,0.723,0.508,0.3,0.023,test
+Turkmenistan,Central and Eastern Europe,2019,5.247,1.052,1.0,0.657,0.394,0.244,0.028,train
+Algeria,Middle East and Northern Africa,2019,5.211,1.002,1.0,0.785,0.086,0.073,0.114,test
+Morocco,Middle East and Northern Africa,2019,5.208,0.801,0.782,0.782,0.418,0.036,0.076,train
+Azerbaijan,Middle East and Northern Africa,2019,5.208,1.043,1.0,0.769,0.351,0.035,0.182,train
+Lebanon,Middle East and Northern Africa,2019,5.197,0.987,1.0,0.815,0.216,0.166,0.027,train
+Indonesia,Southeastern Asia,2019,5.192,0.931,1.0,0.66,0.491,0.498,0.028,train
+China,Eastern Asia,2019,5.191,1.029,1.0,0.893,0.521,0.058,0.1,train
+Vietnam,Southeastern Asia,2019,5.175,0.741,1.0,0.851,0.543,0.147,0.073,test
+Bhutan,Southern Asia,2019,5.082,0.813,1.0,0.604,0.457,0.37,0.167,train
+Cameroon,Sub-Saharan Africa,2019,5.044,0.549,0.91,0.331,0.381,0.187,0.037,train
+Bulgaria,Central and Eastern Europe,2019,5.011,1.092,1.0,0.815,0.311,0.081,0.004,train
+Ghana,Sub-Saharan Africa,2019,4.996,0.611,0.868,0.486,0.381,0.245,0.04,train
+Ivory Coast,Sub-Saharan Africa,2019,4.944,0.569,0.808,0.232,0.352,0.154,0.09,test
+Nepal,Southern Asia,2019,4.913,0.446,1.0,0.677,0.439,0.285,0.089,train
+Jordan,Middle East and Northern Africa,2019,4.906,0.837,1.0,0.815,0.383,0.11,0.13,train
+Benin,Sub-Saharan Africa,2019,4.883,0.393,0.437,0.397,0.349,0.175,0.082,test
+Congo (Brazzaville),Sub-Saharan Africa,2019,4.812,0.673,0.799,0.508,0.372,0.105,0.093,train
+Gabon,Sub-Saharan Africa,2019,4.799,1.057,1.0,0.571,0.295,0.043,0.055,train
+Laos,Southeastern Asia,2019,4.796,0.764,1.0,0.551,0.547,0.266,0.164,train
+South Africa,Sub-Saharan Africa,2019,4.722,0.96,1.0,0.469,0.389,0.13,0.055,train
+Albania,Western Europe,2019,4.719,0.947,0.848,0.874,0.383,0.178,0.027,test
+Venezuela,Latin America and Caribbean,2019,4.707,0.96,1.0,0.805,0.154,0.064,0.047,test
+Cambodia,Southeastern Asia,2019,4.7,0.574,1.0,0.637,0.609,0.232,0.062,test
+Palestinian Territories,Middle East and Northern Africa,2019,4.696,0.657,1.0,0.672,0.225,0.103,0.066,train
+Senegal,Sub-Saharan Africa,2019,4.681,0.45,1.0,0.571,0.292,0.153,0.072,train
+Somalia,Sub-Saharan Africa,2019,4.668,0.0,0.698,0.268,0.559,0.243,0.27,train
+Namibia,Sub-Saharan Africa,2019,4.639,0.879,1.0,0.477,0.401,0.07,0.056,test
+Niger,Sub-Saharan Africa,2019,4.628,0.138,0.774,0.366,0.318,0.188,0.102,train
+Burkina Faso,Sub-Saharan Africa,2019,4.587,0.331,1.0,0.38,0.255,0.177,0.113,train
+Armenia,Middle East and Northern Africa,2019,4.559,0.85,1.0,0.815,0.283,0.095,0.064,test
+Iran,Southern Asia,2019,4.548,1.1,0.842,0.785,0.305,0.27,0.125,train
+Guinea,Sub-Saharan Africa,2019,4.534,0.38,0.829,0.375,0.332,0.207,0.086,train
+Georgia,Middle East and Northern Africa,2019,4.519,0.886,0.666,0.752,0.346,0.043,0.164,test
+Gambia,Sub-Saharan Africa,2019,4.516,0.308,0.939,0.428,0.382,0.269,0.167,train
+Kenya,Sub-Saharan Africa,2019,4.509,0.512,0.983,0.581,0.431,0.372,0.053,train
+Mauritania,Sub-Saharan Africa,2019,4.49,0.57,1.0,0.489,0.066,0.106,0.088,train
+Mozambique,Sub-Saharan Africa,2019,4.466,0.204,0.986,0.39,0.494,0.197,0.138,test
+Tunisia,Middle East and Northern Africa,2019,4.461,0.921,1.0,0.815,0.167,0.059,0.055,train
+Bangladesh,Southern Asia,2019,4.456,0.562,0.928,0.723,0.527,0.166,0.143,test
+Iraq,Middle East and Northern Africa,2019,4.437,1.043,0.98,0.574,0.241,0.148,0.089,train
+Congo (Kinshasa),Sub-Saharan Africa,2019,4.418,0.094,1.0,0.357,0.269,0.212,0.053,train
+Mali,Sub-Saharan Africa,2019,4.39,0.385,1.0,0.308,0.327,0.153,0.052,train
+Sierra Leone,Sub-Saharan Africa,2019,4.374,0.268,0.841,0.242,0.309,0.252,0.045,train
+Sri Lanka,Southern Asia,2019,4.366,0.949,1.0,0.831,0.47,0.244,0.047,train
+Myanmar,Southeastern Asia,2019,4.36,0.71,1.0,0.555,0.525,0.566,0.172,train
+Chad,Sub-Saharan Africa,2019,4.35,0.35,0.766,0.192,0.174,0.198,0.078,train
+Ukraine,Central and Eastern Europe,2019,4.332,0.82,1.0,0.739,0.178,0.187,0.01,train
+Ethiopia,Sub-Saharan Africa,2019,4.286,0.336,1.0,0.532,0.344,0.209,0.1,train
+Eswatini,Sub-Saharan Africa,2019,4.212,0.811,1.0,0.0,0.313,0.074,0.135,train
+Uganda,Sub-Saharan Africa,2019,4.189,0.332,1.0,0.443,0.356,0.252,0.06,train
+Egypt,Middle East and Northern Africa,2019,4.166,0.913,1.0,0.644,0.241,0.076,0.067,test
+Zambia,Sub-Saharan Africa,2019,4.107,0.578,1.0,0.426,0.431,0.247,0.087,train
+Togo,Sub-Saharan Africa,2019,4.085,0.275,0.572,0.41,0.293,0.177,0.085,train
+India,Southern Asia,2019,4.015,0.755,0.765,0.588,0.498,0.2,0.085,train
+Liberia,Sub-Saharan Africa,2019,3.975,0.073,0.922,0.443,0.37,0.233,0.033,train
+Comoros,Sub-Saharan Africa,2019,3.973,0.274,0.757,0.505,0.142,0.275,0.078,train
+Madagascar,Sub-Saharan Africa,2019,3.933,0.274,0.916,0.555,0.148,0.169,0.041,test
+Lesotho,Sub-Saharan Africa,2019,3.802,0.489,1.0,0.168,0.359,0.107,0.093,train
+Burundi,Sub-Saharan Africa,2019,3.775,0.046,0.447,0.38,0.22,0.176,0.18,train
+Zimbabwe,Sub-Saharan Africa,2019,3.663,0.366,1.0,0.433,0.361,0.151,0.089,train
+Haiti,Latin America and Caribbean,2019,3.597,0.323,0.688,0.449,0.026,0.419,0.11,test
+Botswana,Sub-Saharan Africa,2019,3.488,1.041,1.0,0.538,0.455,0.025,0.1,train
+Syria,Middle East and Northern Africa,2019,3.462,0.619,0.378,0.44,0.013,0.331,0.141,test
+Malawi,Sub-Saharan Africa,2019,3.41,0.191,0.56,0.495,0.443,0.218,0.089,train
+Yemen,Middle East and Northern Africa,2019,3.38,0.287,1.0,0.463,0.143,0.108,0.077,train
+Rwanda,Sub-Saharan Africa,2019,3.334,0.359,0.711,0.614,0.555,0.217,0.411,test
+Tanzania,Sub-Saharan Africa,2019,3.231,0.476,0.885,0.499,0.417,0.276,0.147,test
+Afghanistan,Southern Asia,2019,3.203,0.35,0.517,0.361,0.0,0.158,0.025,train
+Central African Republic,Sub-Saharan Africa,2019,3.083,0.026,0.0,0.105,0.225,0.235,0.035,test
+South Sudan,Sub-Saharan Africa,2019,2.853,0.306,0.575,0.295,0.01,0.202,0.091,train
